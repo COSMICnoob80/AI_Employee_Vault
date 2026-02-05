@@ -1,0 +1,16 @@
+2026-02-02 22:01:34,329 [INFO] ==================================================
+2026-02-02 22:01:34,329 [INFO] Filesystem Watcher Starting
+2026-02-02 22:01:34,329 [INFO] Monitoring: /home/cosmicnoob/AI_Employee_Vault/Inbox
+2026-02-02 22:01:34,329 [INFO] Output to:  /home/cosmicnoob/AI_Employee_Vault/Needs_Action
+2026-02-02 22:01:34,329 [INFO] Press Ctrl+C to stop
+2026-02-02 22:01:34,329 [INFO] ==================================================
+2026-02-02 22:02:57,520 [INFO] New file detected: test_file.txt
+2026-02-02 22:02:57,523 [INFO] Task created: 20260202_220257_test_file.md
+2026-02-04 18:52:13,032 [INFO] ==================================================
+2026-02-04 18:52:13,032 [INFO] Filesystem Watcher Starting
+2026-02-04 18:52:13,033 [INFO] Monitoring: /home/cosmicnoob/AI_Employee_Vault/Inbox
+2026-02-04 18:52:13,033 [INFO] Output to:  /home/cosmicnoob/AI_Employee_Vault/Needs_Action
+2026-02-04 18:52:13,033 [INFO] Press Ctrl+C to stop
+2026-02-04 18:52:13,033 [INFO] ==================================================
+2026-02-04 18:52:23,796 [INFO] New file detected: urgent_email.txt
+2026-02-04 18:52:23,800 [INFO] Task created: 20260204_185223_urgent_email.md
