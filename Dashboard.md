@@ -14,6 +14,7 @@ plans_created: 2
 | Component | Status | Last Activity |
 |-----------|--------|---------------|
 | File Watcher | 🟢 Active | 2026-02-04 18:52 |
+| Gmail Watcher | 🟡 Ready | Not started |
 | Task Processor | 🟢 Active | 2026-02-04 18:52 |
 | Goal Tracker | 🟢 Active | 2026-02-04 18:52 |
 
@@ -32,8 +33,19 @@ plans_created: 2
 | Vault initialization | 2026-02-02 | Foundation created |
 | Demo verification | 2026-02-04 | Bronze tier validated |
 
+## Gmail Status
+
+| Metric | Value |
+|--------|-------|
+| Last Checked | _Not started_ |
+| Unread Important | - |
+| Pending Responses | - |
+
+_Start watcher: `python ~/AI_Employee_Vault/Watchers/gmail_watcher.py`_
+
 ## Quick Links
 
 - [[Company_Handbook]] — Rules & guidelines
 - [[Business_Goals]] — Targets & metrics
+- [[gmail_processor]] — Email handling rules
 

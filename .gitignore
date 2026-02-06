@@ -1,3 +1,8 @@
 .env
 *.pid
 __pycache__/
+
+# Gmail OAuth token (sensitive)
+.gmail_token.json
+.gmail_processed_ids.json
+credentials.json

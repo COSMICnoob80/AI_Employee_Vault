@@ -1,0 +1,129 @@
+2026-02-05 23:22:06,283 [INFO] Starting OAuth flow - browser will open...
+2026-02-06 18:29:50,249 [INFO] Starting OAuth flow on port 8090...
+2026-02-06 18:29:50,249 [INFO] If browser doesn't open, visit: http://localhost:8090
+2026-02-06 18:30:15,729 [INFO] "GET /?state=OM54xbin0pVahUP2XDqkVaMIhv8YNX&code=4/0ASc3gC32kToqZXhF6jFRVYccRosQZKxcyQGUiJoGvAFv-_BXa0uZfTNOxomdmWQU-530Tw&scope=https://www.googleapis.com/auth/gmail.readonly HTTP/1.1" 200 65
+2026-02-06 18:32:31,124 [INFO] OAuth authentication successful
+2026-02-06 18:32:31,125 [INFO] Token saved to /home/cosmicnoob/AI_Employee_Vault/.gmail_token.json
+2026-02-06 18:32:31,130 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-02-06 18:33:36,841 [ERROR] Failed to connect to Gmail API: timed out
+2026-02-06 18:33:36,842 [ERROR] Authentication failed. Exiting.
+2026-02-06 18:34:01,027 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-02-06 18:34:01,029 [INFO] Gmail API service built, testing connection...
+2026-02-06 18:35:01,205 [ERROR] Failed to connect to Gmail API: timed out
+2026-02-06 18:35:01,205 [INFO] Token is saved - try running again, network may have been slow.
+2026-02-06 18:35:01,206 [ERROR] Authentication failed. Exiting.
+2026-02-06 18:51:13,609 [INFO] Gmail API service built, testing connection...
+2026-02-06 18:51:43,785 [ERROR] Failed to connect to Gmail API: timed out
+2026-02-06 18:51:43,785 [INFO] Token is saved - try running again, network may have been slow.
+2026-02-06 18:51:43,786 [ERROR] Authentication failed. Exiting.
+2026-02-06 18:53:38,342 [INFO] Gmail API service built, testing connection...
+2026-02-06 18:53:39,354 [INFO] Connected as: noobcosmic684@gmail.com
+2026-02-06 18:54:02,864 [INFO] [DRY-RUN] Would create task: EMAIL_19bb6997_20260206_185402.md
+2026-02-06 18:54:02,864 [INFO]   From: Dr Phil McElnay <phil.mcelnay@info.medall.org>
+2026-02-06 18:54:02,864 [INFO]   Subject: Thrombosis Care: Improve Patient Outcomes
+2026-02-06 18:54:02,864 [INFO]   Priority: normal
+2026-02-06 18:54:02,865 [INFO] [DRY-RUN] Would create task: EMAIL_194ec1eb_20260206_185402.md
+2026-02-06 18:54:02,865 [INFO]   From: X <failed-payments+acct_1Ika5JA3KZ32dPo1@stripe.com>
+2026-02-06 18:54:02,865 [INFO]   Subject: Rs2,250.00 payment to X was unsuccessful again
+2026-02-06 18:54:02,865 [INFO]   Priority: high
+2026-02-06 18:54:02,866 [INFO] [DRY-RUN] Would create task: EMAIL_195285bf_20260206_185402.md
+2026-02-06 18:54:02,866 [INFO]   From: Tyson 4D <tyson@tyson4d.com>
+2026-02-06 18:54:02,866 [INFO]   Subject: Your New Tyson 4D Account
+2026-02-06 18:54:02,867 [INFO]   Priority: urgent
+2026-02-06 18:54:02,867 [INFO] [DRY-RUN] Would create task: EMAIL_19b93119_20260206_185402.md
+2026-02-06 18:54:02,867 [INFO]   From: NayaPay <service@nayapay.com>
+2026-02-06 18:54:02,867 [INFO]   Subject: Your OTP is 140639
+2026-02-06 18:54:02,867 [INFO]   Priority: normal
+2026-02-06 18:54:02,868 [INFO] [DRY-RUN] Would create task: EMAIL_19a63a25_20260206_185402.md
+2026-02-06 18:54:02,868 [INFO]   From: X <invoice+statements+acct_1Ika5JA3KZ32dPo1@stripe.com>
+2026-02-06 18:54:02,868 [INFO]   Subject: Your receipt from X #2901-9026-6660
+2026-02-06 18:54:02,868 [INFO]   Priority: normal
+2026-02-06 18:54:02,869 [INFO] [DRY-RUN] Would create task: EMAIL_19586646_20260206_185402.md
+2026-02-06 18:54:02,869 [INFO]   From: PIAIC Notification <notify@piaic.org>
+2026-02-06 18:54:02,869 [INFO]   Subject: PIAIC Admissions are OPEN - Certified Agentic, and Robotic AI Engineer
+2026-02-06 18:54:02,869 [INFO]   Priority: high
+2026-02-06 18:54:02,869 [INFO] [DRY-RUN] Would create task: EMAIL_199ce195_20260206_185402.md
+2026-02-06 18:54:02,869 [INFO]   From: foodpanda <contact@info.foodpanda.pk>
+2026-02-06 18:54:02,869 [INFO]   Subject: Here’s your golden ticket. 🎟
+2026-02-06 18:54:02,870 [INFO]   Priority: normal
+2026-02-06 18:54:02,870 [INFO] [DRY-RUN] Would create task: EMAIL_199c905a_20260206_185402.md
+2026-02-06 18:54:02,870 [INFO]   From: AAML <online@alfalahamc.com>
+2026-02-06 18:54:02,870 [INFO]   Subject: Welcome to Alfalah Asset Management Limited. (Activation)
+2026-02-06 18:54:02,870 [INFO]   Priority: normal
+2026-02-06 18:54:02,870 [INFO] [DRY-RUN] Would create task: EMAIL_19be711e_20260206_185402.md
+2026-02-06 18:54:02,870 [INFO]   From: Railway <hello@notify.railway.app>
+2026-02-06 18:54:02,870 [INFO]   Subject: Start Collecting Referral Credits
+2026-02-06 18:54:02,870 [INFO]   Priority: normal
+2026-02-06 18:54:02,871 [INFO] [DRY-RUN] Would create task: EMAIL_19a6272a_20260206_185402.md
+2026-02-06 18:54:02,871 [INFO]   From: "talentacquisition@asterdmhealthcare.com" <hcdt.fa.sender@workflow.mail.us2.cloud.oracle.com>
+2026-02-06 18:54:02,871 [INFO]   Subject: Continue to apply for the job Registered Nurse.Nursing Services.Aster Cedars Hospital
+2026-02-06 18:54:02,871 [INFO]   Priority: normal
+2026-02-06 18:54:02,871 [INFO] [DRY-RUN] Would create task: EMAIL_199f14e4_20260206_185402.md
+2026-02-06 18:54:02,871 [INFO]   From: FAMCO Share Registration Services <famco.registrar@famco-srs.com>
+2026-02-06 18:54:02,871 [INFO]   Subject: Gul Ahmed Textile Mills Limited - 01651-42169
+2026-02-06 18:54:02,871 [INFO]   Priority: normal
+2026-02-06 18:54:02,871 [INFO] [DRY-RUN] Would create task: EMAIL_199e15ed_20260206_185402.md
+2026-02-06 18:54:02,871 [INFO]   From: AAML <online@alfalahamc.com>
+2026-02-06 18:54:02,872 [INFO]   Subject: One Time Password
+2026-02-06 18:54:02,872 [INFO]   Priority: normal
+2026-02-06 18:54:02,872 [INFO] [DRY-RUN] Would create task: EMAIL_19be1a6e_20260206_185402.md
+2026-02-06 18:54:02,872 [INFO]   From: GitHub <noreply@github.com>
+2026-02-06 18:54:02,872 [INFO]   Subject: [GitHub] A Google identity was just linked to your GitHub account.
+2026-02-06 18:54:02,872 [INFO]   Priority: normal
+2026-02-06 18:54:02,872 [INFO] [DRY-RUN] Would create task: EMAIL_19be1a6e_20260206_185402.md
+2026-02-06 18:54:02,872 [INFO]   From: GitHub <noreply@github.com>
+2026-02-06 18:54:02,872 [INFO]   Subject: [GitHub] Please review this sign in
+2026-02-06 18:54:02,872 [INFO]   Priority: normal
+2026-02-06 18:54:02,873 [INFO] [DRY-RUN] Would create task: EMAIL_1983c0c1_20260206_185402.md
+2026-02-06 18:54:02,873 [INFO]   From: NayaPay <service@nayapay.com>
+2026-02-06 18:54:02,873 [INFO]   Subject: Your OTP is 632707
+2026-02-06 18:54:02,873 [INFO]   Priority: normal
+2026-02-06 18:54:02,873 [INFO] [DRY-RUN] Would create task: EMAIL_196f9934_20260206_185402.md
+2026-02-06 18:54:02,873 [INFO]   From: eservices@cdspak.com.pk
+2026-02-06 18:54:02,873 [INFO]   Subject: Warrant #:4100782 - MEBL - Dividend/Zakat & Tax Deduction Report
+2026-02-06 18:54:02,873 [INFO]   Priority: normal
+2026-02-06 18:54:02,874 [INFO] [DRY-RUN] Would create task: EMAIL_194e9c26_20260206_185402.md
+2026-02-06 18:54:02,874 [INFO]   From: X <failed-payments+acct_1Ika5JA3KZ32dPo1@stripe.com>
+2026-02-06 18:54:02,874 [INFO]   Subject: Rs2,250.00 payment to X was unsuccessful again
+2026-02-06 18:54:02,874 [INFO]   Priority: high
+2026-02-06 18:54:02,874 [INFO] [DRY-RUN] Would create task: EMAIL_19c30829_20260206_185402.md
+2026-02-06 18:54:02,874 [INFO]   From: no-reply@nccpl.com.pk
+2026-02-06 18:54:02,874 [INFO]   Subject: Important Update: Pakistan Stock Market Transition to T+1 Settlement from 9 February 2026
+2026-02-06 18:54:02,874 [INFO]   Priority: high
+2026-02-06 18:54:02,875 [INFO] [DRY-RUN] Would create task: EMAIL_1957e94e_20260206_185402.md
+2026-02-06 18:54:02,875 [INFO]   From: PIAIC Notification <notify@piaic.org>
+2026-02-06 18:54:02,875 [INFO]   Subject: PIAIC Admissions are OPEN - Certified Agentic, and Robotic AI Engineer
+2026-02-06 18:54:02,875 [INFO]   Priority: high
+2026-02-06 18:54:02,875 [INFO] [DRY-RUN] Would create task: EMAIL_199c7f34_20260206_185402.md
+2026-02-06 18:54:02,875 [INFO]   From: AAML <online@alfalahamc.com>
+2026-02-06 18:54:02,875 [INFO]   Subject: Risk Disclaimer of Investment Alert!
+2026-02-06 18:54:02,875 [INFO]   Priority: normal
+2026-02-06 18:54:02,876 [INFO] [DRY-RUN] Would create task: EMAIL_19583954_20260206_185402.md
+2026-02-06 18:54:02,876 [INFO]   From: Tony Stubblebine <members@medium.com>
+2026-02-06 18:54:02,876 [INFO]   Subject: A letter from Tony Stubblebine, Medium CEO
+2026-02-06 18:54:02,876 [INFO]   Priority: urgent
+2026-02-06 18:54:02,876 [INFO] Single run complete: {'checked': 21, 'new_tasks': 21, 'errors': 0}
+2026-02-06 18:54:28,125 [INFO] Gmail API service built, testing connection...
+2026-02-06 18:54:28,963 [INFO] Connected as: noobcosmic684@gmail.com
+2026-02-06 18:54:48,073 [INFO] Task created: EMAIL_19b93119_20260206_185448.md
+2026-02-06 18:54:48,074 [INFO] Task created: EMAIL_19c30829_20260206_185448.md
+2026-02-06 18:54:48,075 [INFO] Task created: EMAIL_19a6272a_20260206_185448.md
+2026-02-06 18:54:48,075 [INFO] Task created: EMAIL_19bb6997_20260206_185448.md
+2026-02-06 18:54:48,076 [INFO] Task created: EMAIL_199c905a_20260206_185448.md
+2026-02-06 18:54:48,076 [INFO] Task created: EMAIL_196f9934_20260206_185448.md
+2026-02-06 18:54:48,076 [INFO] Task created: EMAIL_19be711e_20260206_185448.md
+2026-02-06 18:54:48,077 [INFO] Task created: EMAIL_1957e94e_20260206_185448.md
+2026-02-06 18:54:48,078 [INFO] Task created: EMAIL_199ce195_20260206_185448.md
+2026-02-06 18:54:48,078 [INFO] Task created: EMAIL_199c7f34_20260206_185448.md
+2026-02-06 18:54:48,079 [INFO] Task created: EMAIL_19583954_20260206_185448.md
+2026-02-06 18:54:48,079 [INFO] Task created: EMAIL_195285bf_20260206_185448.md
+2026-02-06 18:54:48,080 [INFO] Task created: EMAIL_1983c0c1_20260206_185448.md
+2026-02-06 18:54:48,080 [INFO] Task created: EMAIL_19a63a25_20260206_185448.md
+2026-02-06 18:54:48,080 [INFO] Task created: EMAIL_199f14e4_20260206_185448.md
+2026-02-06 18:54:48,080 [INFO] Task created: EMAIL_199e15ed_20260206_185448.md
+2026-02-06 18:54:48,081 [INFO] Task created: EMAIL_194e9c26_20260206_185448.md
+2026-02-06 18:54:48,081 [INFO] Task created: EMAIL_19586646_20260206_185448.md
+2026-02-06 18:54:48,082 [INFO] Task created: EMAIL_194ec1eb_20260206_185448.md
+2026-02-06 18:54:48,082 [INFO] Task created: EMAIL_19be1a6e_20260206_185448.md
+2026-02-06 18:54:48,083 [INFO] Task created: EMAIL_19be1a6e_20260206_185448.md
+2026-02-06 18:54:48,083 [INFO] Single run complete: {'checked': 21, 'new_tasks': 21, 'errors': 0}

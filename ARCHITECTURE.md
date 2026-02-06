@@ -248,19 +248,20 @@ Humans can intervene at **any stage**:
 
 ### Write Permissions by Agent
 
-| Folder | Agent 1 (Inbox) | Agent 2 (Planner) | Agent 3 (Reports) | Human |
-|--------|:---------------:|:-----------------:|:-----------------:|:-----:|
-| `Inbox/` | ❌ | ❌ | ❌ | ✅ |
-| `Needs_Action/` | ✅ (create) | ✅ (update) | ❌ | ✅ |
-| `Pending_Approval/` | ❌ | ✅ (move to) | ❌ | ✅ |
-| `Approved/` | ❌ | ❌ | ❌ | ✅ |
-| `Done/` | ❌ | ✅ (move to) | ❌ | ✅ |
-| `Plans/` | ❌ | ✅ | ❌ | ✅ |
-| `Skills/` | ❌ | ❌ | ❌ | ✅ |
-| `Logs/` | ✅ | ✅ | ✅ | ✅ |
-| `Dashboard.md` | ❌ | ✅ | ✅ | ✅ |
-| `Business_Goals.md` | ❌ | ❌ | ✅ | ✅ |
-| `Company_Handbook.md` | ❌ | ❌ | ❌ | ✅ |
+| Folder                | Agent 1 (Inbox) | Agent 2 (Planner) | Agent 3 (Reports) | Human |
+| --------------------- | :-------------: | :---------------: | :---------------: | :---: |
+| `Inbox/`              |        ❌        |         ❌         |         ❌         |   ✅   |
+| `Needs_Action/`       |   ✅ (create)    |    ✅ (update)     |         ❌         |   ✅   |
+| `Pending_Approval/`   |        ❌        |    ✅ (move to)    |         ❌         |   ✅   |
+| `Approved/`           |        ❌        |         ❌         |         ❌         |   ✅   |
+| `Done/`               |        ❌        |    ✅ (move to)    |         ❌         |   ✅   |
+| `Plans/`              |        ❌        |         ✅         |         ❌         |   ✅   |
+| `Skills/`             |        ❌        |         ❌         |         ❌         |   ✅   |
+| `Logs/`               |        ✅        |         ✅         |         ✅         |   ✅   |
+| `Dashboard.md`        |        ❌        |         ✅         |         ✅         |   ✅   |
+| `Business_Goals.md`   |        ❌        |         ❌         |         ✅         |   ✅   |
+| `Company_Handbook.md` |        ❌        |         ❌         |         ❌         |   ✅   |
+|                       |                 |                   |                   |       |
 
 ### Conflict Prevention Rules
 
