@@ -1,7 +1,7 @@
 ---
 type: dashboard
 created: 2026-02-02
-last_updated: 2026-02-04 18:52
+last_updated: 2026-02-06 19:28
 status: active
 pending_tasks: 2
 plans_created: 2
@@ -42,6 +42,14 @@ plans_created: 2
 | Pending Responses | - |
 
 _Start watcher: `python ~/AI_Employee_Vault/Watchers/gmail_watcher.py`_
+
+## Planning Status
+
+| Metric | Count |
+|--------|-------|
+| Tasks awaiting planning | 0 |
+| Tasks with plans | 22 |
+| Active plans | 22 |
 
 ## Quick Links
 
