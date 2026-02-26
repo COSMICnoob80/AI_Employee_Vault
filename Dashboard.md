@@ -1,10 +1,10 @@
 ---
 type: dashboard
 created: 2026-02-02
-last_updated: 2026-02-06 19:28
+last_updated: 2026-02-25 14:30
 status: active
-pending_tasks: 2
-plans_created: 2
+pending_tasks: 4
+plans_created: 3
 ---
 
 # 📊 AI Employee Dashboard
@@ -15,6 +15,7 @@ plans_created: 2
 |-----------|--------|---------------|
 | File Watcher | 🟢 Active | 2026-02-04 18:52 |
 | Gmail Watcher | 🟡 Ready | Not started |
+| Approval Watcher | 🟢 Ready | 2026-02-25 |
 | Task Processor | 🟢 Active | 2026-02-04 18:52 |
 | Goal Tracker | 🟢 Active | 2026-02-04 18:52 |
 
@@ -50,6 +51,22 @@ _Start watcher: `python ~/AI_Employee_Vault/Watchers/gmail_watcher.py`_
 | Tasks awaiting planning | 0 |
 | Tasks with plans | 22 |
 | Active plans | 22 |
+
+## Approval Status
+
+| Metric | Value |
+|--------|-------|
+| Pending Approvals | 2 |
+| Approved Today | 0 |
+| Rejected Today | 0 |
+
+### Pending Requests
+| Request | Type | Priority | Requested |
+|---------|------|----------|-----------|
+| [[20260225_test_email_send\|Send Project Status Email]] | 📧 Email | 🔴 high | 2026-02-25 |
+| [[20260225_test_spend_600pkr\|Software Subscription 600 PKR]] | 💰 Financial | 🟡 normal | 2026-02-25 |
+
+_Monitored by: `python ~/AI_Employee_Vault/Watchers/approval_watcher.py`_
 
 ## Quick Links
 

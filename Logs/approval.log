@@ -1,0 +1,18 @@
+2026-02-25 22:32:48,500 [INFO] ==================================================
+2026-02-25 22:32:48,500 [INFO] Approval Watcher Starting
+2026-02-25 22:32:48,500 [INFO] Monitoring: /home/cosmicnoob/AI_Employee_Vault/Pending_Approval
+2026-02-25 22:32:48,500 [INFO] Monitoring: /home/cosmicnoob/AI_Employee_Vault/Approved
+2026-02-25 22:32:48,500 [INFO] Archive to: /home/cosmicnoob/AI_Employee_Vault/Done
+2026-02-25 22:32:48,500 [INFO] Press Ctrl+C to stop
+2026-02-25 22:32:48,500 [INFO] ==================================================
+2026-02-25 22:32:50,885 [INFO] Approved: 20260225_test_email_send.md | Type: email_send | Ready for execution
+2026-02-25 22:32:50,886 [INFO] Archived to Done: 20260225_test_email_send.md
+2026-02-25 22:47:16,130 [INFO] ==================================================
+2026-02-25 22:47:16,130 [INFO] Approval Watcher Starting
+2026-02-25 22:47:16,130 [INFO] Monitoring: /home/cosmicnoob/AI_Employee_Vault/Pending_Approval
+2026-02-25 22:47:16,130 [INFO] Monitoring: /home/cosmicnoob/AI_Employee_Vault/Approved
+2026-02-25 22:47:16,130 [INFO] Archive to: /home/cosmicnoob/AI_Employee_Vault/Done
+2026-02-25 22:47:16,130 [INFO] Press Ctrl+C to stop
+2026-02-25 22:47:16,130 [INFO] ==================================================
+2026-02-25 22:47:18,599 [INFO] Approved: 20260225_s6_test_approval.md | Type: data_deletion | Ready for execution
+2026-02-25 22:47:18,601 [INFO] Archived to Done: 20260225_s6_test_approval.md
