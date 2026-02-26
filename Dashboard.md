@@ -18,6 +18,7 @@ plans_created: 3
 | Approval Watcher | 🟢 Ready | 2026-02-25 |
 | Task Processor | 🟢 Active | 2026-02-04 18:52 |
 | Goal Tracker | 🟢 Active | 2026-02-04 18:52 |
+| Scheduler | 🟢 Ready | 2026-02-26 |
 
 ## Active Tasks
 
@@ -67,6 +68,21 @@ _Start watcher: `python ~/AI_Employee_Vault/Watchers/gmail_watcher.py`_
 | [[20260225_test_spend_600pkr\|Software Subscription 600 PKR]] | 💰 Financial | 🟡 normal | 2026-02-25 |
 
 _Monitored by: `python ~/AI_Employee_Vault/Watchers/approval_watcher.py`_
+
+## Scheduler Status
+
+| Metric | Value |
+|--------|-------|
+| Mode | Cron (5-min keep-alive) |
+| Last Health Check | _Not started_ |
+| Log File | `Logs/scheduler.log` |
+
+**Commands:**
+- Start all: `bash Scripts/schedule_watchers.sh start`
+- Stop all: `bash Scripts/schedule_watchers.sh stop`
+- Check status: `bash Scripts/schedule_watchers.sh status`
+- Install cron: `bash Scripts/cron_setup.sh install`
+- Remove cron: `bash Scripts/cron_setup.sh remove`
 
 ## Quick Links
 
