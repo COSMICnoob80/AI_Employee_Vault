@@ -104,6 +104,88 @@ If this is urgent, please [alternative contact method].
 Best regards
 ```
 
+## Examples
+
+### Example 1: Urgent (Client Payment Failure)
+**Input:**
+```
+From: cfo@bigclient.com
+Subject: CRITICAL: Payment processing failed - invoice #8821
+Body: Our payment gateway rejected the charge for invoice #8821 ($12,500). This is blocking our Q1 close. We need this resolved immediately or we'll have to escalate to your management. Please advise ASAP.
+Keywords Matched: critical, asap, payment, invoice
+```
+
+**Output:**
+```
+Category: Urgent
+Priority: 9
+Action: Respond immediately with acknowledgment template. Flag for manual review (financial > $500). Escalate to human handling.
+Response Template: Acknowledgment
+Escalate: yes — financial amount > $500, client frustration detected, payment system issue
+```
+
+---
+
+### Example 2: Business (Invoice Received)
+**Input:**
+```
+From: billing@saasprovider.io
+Subject: Invoice #INV-2026-0451 for February
+Body: Hi, please find attached your monthly invoice for $49.99. Payment is due within 30 days. Thank you for your continued business.
+Keywords Matched: invoice, payment
+```
+
+**Output:**
+```
+Category: Business
+Priority: 5
+Action: Forward to accounting, log in [[Business_Goals]] for subscription tracking. Review within 1 week.
+Response Template: Acknowledgment
+Escalate: no
+```
+
+---
+
+### Example 3: Personal (Social Invitation)
+**Input:**
+```
+From: ali.khan@gmail.com
+Subject: Dinner this Friday?
+Body: Hey! A few of us are getting together for dinner this Friday at 7pm. Would love for you to join. Let me know!
+Keywords Matched: (none)
+```
+
+**Output:**
+```
+Category: Personal
+Priority: 4
+Action: Check calendar and respond with availability. Add to personal calendar if attending.
+Response Template: (none — informal reply)
+Escalate: no
+```
+
+---
+
+### Example 4: Spam (Phishing Attempt)
+**Input:**
+```
+From: security-alert@g00gle-verify.xyz
+Subject: Your account has been compromised!! Act NOW
+Body: Dear Customer, We have detected unusual activity on your account. CLICK HERE to verify your identity immediately or your account will be suspended within 24 hours!!! This is your FINAL WARNING.
+Keywords Matched: (none — unknown sender)
+```
+
+**Output:**
+```
+Category: Spam
+Priority: 1
+Action: Delete immediately. Do not click any links. Mark as spam in email client.
+Response Template: (none)
+Escalate: no
+```
+
+---
+
 ## Escalation Rules
 
 | Condition | Escalation Action |

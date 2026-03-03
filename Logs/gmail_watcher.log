@@ -127,3 +127,71 @@
 2026-02-06 18:54:48,082 [INFO] Task created: EMAIL_19be1a6e_20260206_185448.md
 2026-02-06 18:54:48,083 [INFO] Task created: EMAIL_19be1a6e_20260206_185448.md
 2026-02-06 18:54:48,083 [INFO] Single run complete: {'checked': 21, 'new_tasks': 21, 'errors': 0}
+2026-02-26 22:39:51,048 [WARNING] Token refresh failed: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+2026-02-26 22:39:51,048 [WARNING] Token refresh failed: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+2026-02-26 22:39:51,054 [INFO] Starting OAuth flow on port 8090...
+2026-02-26 22:39:51,054 [INFO] Starting OAuth flow on port 8090...
+2026-02-26 22:39:51,054 [INFO] If browser doesn't open, visit: http://localhost:8090
+2026-02-26 22:39:51,054 [INFO] If browser doesn't open, visit: http://localhost:8090
+2026-02-26 22:40:09,237 [INFO] "GET /?state=14KmDLJLdWr5FEm2Q6JrBiQ17H7iHH&iss=https://accounts.google.com&code=4/0AfrIepC3rkJEnOLy2d8z5r_MrK2dbj7Vb0K-CYbY4Q_W-d-YsUoPbs960QfZbc-tZRKRyQ&scope=https://www.googleapis.com/auth/gmail.readonly HTTP/1.1" 200 65
+2026-02-26 22:40:09,237 [INFO] "GET /?state=14KmDLJLdWr5FEm2Q6JrBiQ17H7iHH&iss=https://accounts.google.com&code=4/0AfrIepC3rkJEnOLy2d8z5r_MrK2dbj7Vb0K-CYbY4Q_W-d-YsUoPbs960QfZbc-tZRKRyQ&scope=https://www.googleapis.com/auth/gmail.readonly HTTP/1.1" 200 65
+2026-02-26 22:40:10,188 [INFO] OAuth authentication successful
+2026-02-26 22:40:10,188 [INFO] OAuth authentication successful
+2026-02-26 22:40:10,189 [INFO] Token saved to /home/cosmicnoob/AI_Employee_Vault/.gmail_token.json
+2026-02-26 22:40:10,189 [INFO] Token saved to /home/cosmicnoob/AI_Employee_Vault/.gmail_token.json
+2026-02-26 22:40:10,198 [INFO] Gmail API service built, testing connection...
+2026-02-26 22:40:10,198 [INFO] Gmail API service built, testing connection...
+2026-02-26 22:40:11,006 [INFO] Connected as: noobcosmic684@gmail.com
+2026-02-26 22:40:11,006 [INFO] Connected as: noobcosmic684@gmail.com
+2026-02-26 22:40:11,008 [INFO] ==================================================
+2026-02-26 22:40:11,008 [INFO] ==================================================
+2026-02-26 22:40:11,009 [INFO] Gmail Watcher Starting
+2026-02-26 22:40:11,009 [INFO] Gmail Watcher Starting
+2026-02-26 22:40:11,009 [INFO] Mode: LIVE
+2026-02-26 22:40:11,009 [INFO] Mode: LIVE
+2026-02-26 22:40:11,009 [INFO] Check interval: 120s
+2026-02-26 22:40:11,009 [INFO] Check interval: 120s
+2026-02-26 22:40:11,009 [INFO] Output to: /home/cosmicnoob/AI_Employee_Vault/Needs_Action
+2026-02-26 22:40:11,009 [INFO] Output to: /home/cosmicnoob/AI_Employee_Vault/Needs_Action
+2026-02-26 22:40:11,010 [INFO] Press Ctrl+C to stop
+2026-02-26 22:40:11,010 [INFO] Press Ctrl+C to stop
+2026-02-26 22:40:11,010 [INFO] ==================================================
+2026-02-26 22:40:11,010 [INFO] ==================================================
+2026-02-26 22:40:15,306 [INFO] Task created: EMAIL_19c3c219_20260226_224015.md
+2026-02-26 22:40:15,306 [INFO] Task created: EMAIL_19c3c219_20260226_224015.md
+2026-02-26 22:40:15,308 [INFO] Task created: EMAIL_19c908f7_20260226_224015.md
+2026-02-26 22:40:15,308 [INFO] Task created: EMAIL_19c908f7_20260226_224015.md
+2026-02-26 22:40:15,308 [INFO] Task created: EMAIL_19c8e9c6_20260226_224015.md
+2026-02-26 22:40:15,308 [INFO] Task created: EMAIL_19c8e9c6_20260226_224015.md
+2026-02-26 22:40:15,309 [INFO] Check complete: 3 emails, 3 new tasks
+2026-02-26 22:40:15,309 [INFO] Check complete: 3 emails, 3 new tasks
+2026-02-26 22:42:18,410 [INFO] Check complete: 0 emails, 0 new tasks
+2026-02-26 22:42:18,410 [INFO] Check complete: 0 emails, 0 new tasks
+2026-02-26 22:44:21,235 [INFO] Check complete: 0 emails, 0 new tasks
+2026-02-26 22:44:21,235 [INFO] Check complete: 0 emails, 0 new tasks
+2026-02-27 15:26:43,870 [INFO] Token refreshed successfully
+2026-02-27 15:26:43,870 [INFO] Token refreshed successfully
+2026-02-27 15:26:43,927 [INFO] Token saved to /home/cosmicnoob/AI_Employee_Vault/.gmail_token.json
+2026-02-27 15:26:43,927 [INFO] Token saved to /home/cosmicnoob/AI_Employee_Vault/.gmail_token.json
+2026-02-27 15:26:43,999 [INFO] Gmail API service built, testing connection...
+2026-02-27 15:26:43,999 [INFO] Gmail API service built, testing connection...
+2026-02-27 15:26:45,765 [INFO] Connected as: noobcosmic684@gmail.com
+2026-02-27 15:26:45,765 [INFO] Connected as: noobcosmic684@gmail.com
+2026-02-27 15:26:46,694 [INFO] ==================================================
+2026-02-27 15:26:46,694 [INFO] ==================================================
+2026-02-27 15:26:46,695 [INFO] Gmail Watcher Starting
+2026-02-27 15:26:46,695 [INFO] Gmail Watcher Starting
+2026-02-27 15:26:46,695 [INFO] Mode: LIVE
+2026-02-27 15:26:46,695 [INFO] Mode: LIVE
+2026-02-27 15:26:46,695 [INFO] Check interval: 120s
+2026-02-27 15:26:46,695 [INFO] Check interval: 120s
+2026-02-27 15:26:46,695 [INFO] Output to: /home/cosmicnoob/AI_Employee_Vault/Needs_Action
+2026-02-27 15:26:46,695 [INFO] Output to: /home/cosmicnoob/AI_Employee_Vault/Needs_Action
+2026-02-27 15:26:46,695 [INFO] Press Ctrl+C to stop
+2026-02-27 15:26:46,695 [INFO] Press Ctrl+C to stop
+2026-02-27 15:26:46,695 [INFO] ==================================================
+2026-02-27 15:26:46,695 [INFO] ==================================================
+2026-02-27 15:26:50,987 [INFO] Task created: EMAIL_19c9e370_20260227_152650.md
+2026-02-27 15:26:50,987 [INFO] Task created: EMAIL_19c9e370_20260227_152650.md
+2026-02-27 15:26:50,988 [INFO] Check complete: 1 emails, 1 new tasks
+2026-02-27 15:26:50,988 [INFO] Check complete: 1 emails, 1 new tasks

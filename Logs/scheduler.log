@@ -18,3 +18,13 @@
 2026-02-26 22:44:52 [INFO] gmail_watcher stopped (was PID 346851)
 2026-02-26 22:44:53 [INFO] approval_watcher stopped (was PID 348104)
 2026-02-26 22:44:53 [INFO] === All watchers stopped ===
+2026-02-27 15:26:42 [INFO] === Starting watchers ===
+2026-02-27 15:26:42 [INFO] filesystem_watcher started (PID 15420)
+2026-02-27 15:26:42 [INFO] gmail_watcher started (PID 15426)
+2026-02-27 15:26:42 [INFO] approval_watcher started (PID 15432)
+2026-02-27 15:26:42 [INFO] === Startup complete ===
+2026-02-27 15:27:04 [INFO] === Stopping watchers ===
+2026-02-27 15:27:05 [INFO] filesystem_watcher stopped (was PID 15420)
+2026-02-27 15:27:06 [INFO] gmail_watcher stopped (was PID 15426)
+2026-02-27 15:27:07 [INFO] approval_watcher stopped (was PID 15432)
+2026-02-27 15:27:07 [INFO] === All watchers stopped ===

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "gmail-send": {
+      "command": "python3",
+      "args": ["/home/cosmicnoob/AI_Employee_Vault/MCP/gmail_send_server.py"]
+    }
+  }
+}

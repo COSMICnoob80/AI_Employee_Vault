@@ -1,0 +1,25 @@
+# Skills Index
+
+All documented capabilities of the AI Employee system.
+
+| Skill | File | Description |
+|-------|------|-------------|
+| Email Classifier | [[email_classifier]] | Categorizes emails by urgency/type and suggests actions |
+| Gmail Processor | [[gmail_processor]] | Processes Gmail emails with response templates and escalation |
+| Inbox Processor | [[inbox_processor]] | Monitors Inbox/ folder and creates task files from file drops |
+| Approval Requester | [[approval_requester]] | Safety gate for actions requiring human approval |
+| Task Planner | [[task_planner]] | Generates step-by-step plans from task files |
+| Scheduler | [[scheduler]] | Automated watcher startup, self-healing, and cron management |
+| MCP Gmail Send | [[mcp_gmail_send]] | MCP server exposing send_email tool via Gmail API |
+
+## Standard Skill Format
+
+Every skill document follows the 7-section format:
+
+1. **Description** — What the skill does
+2. **Capabilities** — Specific abilities
+3. **Input Format** — Expected input structure
+4. **Output Format** — What it produces
+5. **Rules** — Decision logic and constraints
+6. **Examples** — Input/Output pairs demonstrating behavior
+7. **Integration** — Links to other vault components

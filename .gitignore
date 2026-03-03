@@ -4,5 +4,6 @@ __pycache__/
 
 # Gmail OAuth token (sensitive)
 .gmail_token.json
+.gmail_token_send.json
 .gmail_processed_ids.json
 credentials.json

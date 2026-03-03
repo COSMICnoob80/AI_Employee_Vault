@@ -19,6 +19,7 @@ plans_created: 3
 | Task Processor | 🟢 Active | 2026-02-04 18:52 |
 | Goal Tracker | 🟢 Active | 2026-02-04 18:52 |
 | Scheduler | 🟢 Ready | 2026-02-26 |
+| MCP Gmail Send | 🟡 Ready | Not started |
 
 ## Active Tasks
 
@@ -52,6 +53,7 @@ _Start watcher: `python ~/AI_Employee_Vault/Watchers/gmail_watcher.py`_
 | Tasks awaiting planning | 0 |
 | Tasks with plans | 22 |
 | Active plans | 22 |
+| Skills Documented | 7 |
 
 ## Approval Status
 
