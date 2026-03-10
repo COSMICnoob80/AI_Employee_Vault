@@ -1,0 +1,121 @@
+2026-03-05 20:54:02,073 [INFO] ==================================================
+2026-03-05 20:54:02,073 [INFO] CEO Briefing Generator Starting
+2026-03-05 20:54:02,073 [INFO] Mode: DRY RUN
+2026-03-05 20:54:02,073 [INFO] ==================================================
+2026-03-05 20:54:02,073 [INFO] Week: 2026-W10 (2026-03-02 to 2026-03-08)
+2026-03-05 20:54:02,073 [INFO] Collecting vault data...
+2026-03-05 20:54:02,079 [WARNING] YAML parse error in EMAIL_19a6272a_20260206_185448.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""talentacquisition@asterdmhealthc ... 
+            ^
+2026-03-05 20:54:02,082 [WARNING] YAML parse error in EMAIL_19c908f7_20260226_224015.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""Booking.com" <noreply-iam@bookin ... 
+            ^
+2026-03-05 20:54:02,085 [INFO] Dry run complete — no file written
+2026-03-05 20:54:02,085 [INFO] CEO Briefing Generator finished
+2026-03-05 20:54:07,914 [INFO] ==================================================
+2026-03-05 20:54:07,914 [INFO] CEO Briefing Generator Starting
+2026-03-05 20:54:07,914 [INFO] ==================================================
+2026-03-05 20:54:07,914 [INFO] Week: 2026-W10 (2026-03-02 to 2026-03-08)
+2026-03-05 20:54:07,914 [INFO] Collecting vault data...
+2026-03-05 20:54:07,920 [WARNING] YAML parse error in EMAIL_19a6272a_20260206_185448.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""talentacquisition@asterdmhealthc ... 
+            ^
+2026-03-05 20:54:07,923 [WARNING] YAML parse error in EMAIL_19c908f7_20260226_224015.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""Booking.com" <noreply-iam@bookin ... 
+            ^
+2026-03-05 20:54:07,926 [INFO] CEO Briefing written to: /home/cosmicnoob/AI_Employee_Vault/Reports/CEO_Briefing_2026-03-02.md
+2026-03-05 20:54:07,926 [INFO] Report saved: /home/cosmicnoob/AI_Employee_Vault/Reports/CEO_Briefing_2026-03-02.md
+2026-03-05 20:54:07,926 [INFO] CEO Briefing Generator finished
+2026-03-05 20:54:08,631 [INFO] ==================================================
+2026-03-05 20:54:08,631 [INFO] CEO Briefing Generator Starting
+2026-03-05 20:54:08,631 [INFO] Target week: 2026-W09
+2026-03-05 20:54:08,631 [INFO] ==================================================
+2026-03-05 20:54:08,631 [INFO] Week: 2026-W09 (2026-02-23 to 2026-03-01)
+2026-03-05 20:54:08,631 [INFO] Collecting vault data...
+2026-03-05 20:54:08,636 [WARNING] YAML parse error in EMAIL_19a6272a_20260206_185448.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""talentacquisition@asterdmhealthc ... 
+            ^
+2026-03-05 20:54:08,639 [WARNING] YAML parse error in EMAIL_19c908f7_20260226_224015.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""Booking.com" <noreply-iam@bookin ... 
+            ^
+2026-03-05 20:54:08,642 [INFO] CEO Briefing written to: /home/cosmicnoob/AI_Employee_Vault/Reports/CEO_Briefing_2026-02-23.md
+2026-03-05 20:54:08,642 [INFO] Report saved: /home/cosmicnoob/AI_Employee_Vault/Reports/CEO_Briefing_2026-02-23.md
+2026-03-05 20:54:08,642 [INFO] CEO Briefing Generator finished
+2026-03-05 20:58:20,751 [INFO] ==================================================
+2026-03-05 20:58:20,751 [INFO] CEO Briefing Generator Starting
+2026-03-05 20:58:20,752 [INFO] Mode: DRY RUN
+2026-03-05 20:58:20,752 [INFO] ==================================================
+2026-03-05 20:58:20,752 [INFO] Week: 2026-W10 (2026-03-02 to 2026-03-08)
+2026-03-05 20:58:20,752 [INFO] Collecting vault data...
+2026-03-05 20:58:20,758 [WARNING] YAML parse error in EMAIL_19a6272a_20260206_185448.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""talentacquisition@asterdmhealthc ... 
+            ^
+2026-03-05 20:58:20,761 [WARNING] YAML parse error in EMAIL_19c908f7_20260226_224015.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""Booking.com" <noreply-iam@bookin ... 
+            ^
+2026-03-05 20:58:20,765 [INFO] Dry run complete — no file written
+2026-03-05 20:58:20,765 [INFO] CEO Briefing Generator finished
+2026-03-05 22:33:01,730 [INFO] ==================================================
+2026-03-05 22:33:01,730 [INFO] CEO Briefing Generator Starting
+2026-03-05 22:33:01,730 [INFO] ==================================================
+2026-03-05 22:33:01,730 [INFO] Week: 2026-W10 (2026-03-02 to 2026-03-08)
+2026-03-05 22:33:01,730 [INFO] Collecting vault data...
+2026-03-05 22:33:01,736 [WARNING] YAML parse error in EMAIL_19a6272a_20260206_185448.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""talentacquisition@asterdmhealthc ... 
+            ^
+2026-03-05 22:33:01,739 [WARNING] YAML parse error in EMAIL_19c908f7_20260226_224015.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""Booking.com" <noreply-iam@bookin ... 
+            ^
+2026-03-05 22:33:01,742 [INFO] CEO Briefing written to: /home/cosmicnoob/AI_Employee_Vault/Reports/CEO_Briefing_2026-03-02.md
+2026-03-05 22:33:01,742 [INFO] Report saved: /home/cosmicnoob/AI_Employee_Vault/Reports/CEO_Briefing_2026-03-02.md
+2026-03-05 22:33:01,742 [INFO] CEO Briefing Generator finished

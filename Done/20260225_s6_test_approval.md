@@ -4,9 +4,9 @@ action_type: data_deletion
 requested: 2026-02-25T22:45:00
 status: done
 priority: high
+domain: personal
 threshold_exceeded: data_modification
-requester: AI_Employee
----
+requester: AI_Employee---
 
 # Approval Request: Delete Old Archive Records
 

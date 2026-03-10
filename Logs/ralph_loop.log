@@ -1,0 +1,156 @@
+2026-03-06 22:29:20,599 [INFO] PID 262249 written to /home/cosmicnoob/AI_Employee_Vault/ralph_loop.pid
+2026-03-06 22:29:20,599 [INFO] ==================================================
+2026-03-06 22:29:20,599 [INFO] Ralph Wiggum Task Loop Starting
+2026-03-06 22:29:20,599 [INFO] Mode: dry_run=False, once=False, scan_only=True, max=0
+2026-03-06 22:29:20,599 [INFO] ==================================================
+2026-03-06 22:29:20,607 [WARNING] YAML parse error in EMAIL_19a6272a_20260206_185448.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""talentacquisition@asterdmhealthc ... 
+            ^
+2026-03-06 22:29:20,610 [WARNING] YAML parse error in EMAIL_19c908f7_20260226_224015.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""Booking.com" <noreply-iam@bookin ... 
+            ^
+2026-03-06 22:29:20,612 [INFO] Ralph loop stopped. Tasks processed: 0
+2026-03-06 22:29:31,098 [INFO] PID 262331 written to /home/cosmicnoob/AI_Employee_Vault/ralph_loop.pid
+2026-03-06 22:29:31,098 [INFO] ==================================================
+2026-03-06 22:29:31,098 [INFO] Ralph Wiggum Task Loop Starting
+2026-03-06 22:29:31,098 [INFO] Mode: dry_run=False, once=False, scan_only=True, max=0
+2026-03-06 22:29:31,098 [INFO] ==================================================
+2026-03-06 22:29:31,106 [WARNING] YAML parse error in EMAIL_19a6272a_20260206_185448.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""talentacquisition@asterdmhealthc ... 
+            ^
+2026-03-06 22:29:31,109 [WARNING] YAML parse error in EMAIL_19c908f7_20260226_224015.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""Booking.com" <noreply-iam@bookin ... 
+            ^
+2026-03-06 22:29:31,110 [INFO] Queue manifest written: /home/cosmicnoob/AI_Employee_Vault/Logs/ralph_queue.json (27 tasks)
+2026-03-06 22:29:31,110 [INFO] Queue: 27 tasks
+2026-03-06 22:29:31,110 [INFO] Scan-only mode — skipping execution
+2026-03-06 22:29:31,110 [INFO] Ralph loop stopped. Tasks processed: 0
+2026-03-06 22:29:35,101 [INFO] PID 262380 written to /home/cosmicnoob/AI_Employee_Vault/ralph_loop.pid
+2026-03-06 22:29:35,101 [INFO] ==================================================
+2026-03-06 22:29:35,101 [INFO] Ralph Wiggum Task Loop Starting
+2026-03-06 22:29:35,101 [INFO] Mode: dry_run=True, once=True, scan_only=False, max=0
+2026-03-06 22:29:35,101 [INFO] ==================================================
+2026-03-06 22:29:35,108 [WARNING] YAML parse error in EMAIL_19a6272a_20260206_185448.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""talentacquisition@asterdmhealthc ... 
+            ^
+2026-03-06 22:29:35,112 [WARNING] YAML parse error in EMAIL_19c908f7_20260226_224015.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""Booking.com" <noreply-iam@bookin ... 
+            ^
+2026-03-06 22:29:35,114 [INFO] Queue manifest written: /home/cosmicnoob/AI_Employee_Vault/Logs/ralph_queue.json (27 tasks)
+2026-03-06 22:29:35,114 [INFO] Queue: 27 tasks
+2026-03-06 22:29:35,114 [INFO] Processing: EMAIL_195285bf_20260206_185448.md [urgent] [email] -> needs_approval
+2026-03-06 22:29:35,115 [INFO] Processing: EMAIL_19583954_20260206_185448.md [urgent] [email] -> needs_approval
+2026-03-06 22:29:35,115 [INFO] Processing: EMAIL_194e9c26_20260206_185448.md [high] [email] -> needs_approval
+2026-03-06 22:29:35,115 [INFO] Processing: EMAIL_194ec1eb_20260206_185448.md [high] [email] -> needs_approval
+2026-03-06 22:29:35,115 [INFO] Processing: EMAIL_1957e94e_20260206_185448.md [high] [email] -> needs_approval
+2026-03-06 22:29:35,115 [INFO] Processing: EMAIL_19586646_20260206_185448.md [high] [email] -> needs_approval
+2026-03-06 22:29:35,115 [INFO] Processing: EMAIL_19c30829_20260206_185448.md [high] [email] -> needs_approval
+2026-03-06 22:29:35,115 [INFO] Processing: EMAIL_19c8e9c6_20260226_224015.md [high] [email] -> needs_approval
+2026-03-06 22:29:35,115 [INFO] Processing: EMAIL_19c9e370_20260227_152650.md [high] [email] -> needs_approval
+2026-03-06 22:29:35,115 [INFO] Processing: 20260204_185223_urgent_email.md [high] [file_drop] -> autonomous
+2026-03-06 22:29:35,116 [INFO] Processing: TEST_manual_task.md [high] [manual] -> autonomous
+2026-03-06 22:29:35,116 [INFO] Processing: EMAIL_196f9934_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:29:35,116 [INFO] Processing: EMAIL_1983c0c1_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:29:35,116 [INFO] Processing: EMAIL_199c7f34_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:29:35,116 [INFO] Processing: EMAIL_199c905a_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:29:35,116 [INFO] Processing: EMAIL_199ce195_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:29:35,116 [INFO] Processing: EMAIL_199e15ed_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:29:35,116 [INFO] Processing: EMAIL_199f14e4_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:29:35,117 [INFO] Processing: EMAIL_19a6272a_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:29:35,117 [INFO] Processing: EMAIL_19a63a25_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:29:35,117 [INFO] Processing: EMAIL_19b93119_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:29:35,117 [INFO] Processing: EMAIL_19bb6997_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:29:35,117 [INFO] Processing: EMAIL_19be1a6e_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:29:35,117 [INFO] Processing: EMAIL_19be711e_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:29:35,117 [INFO] Processing: EMAIL_19c3c219_20260226_224015.md [normal] [email] -> needs_approval
+2026-03-06 22:29:35,117 [INFO] Processing: EMAIL_19c908f7_20260226_224015.md [normal] [email] -> needs_approval
+2026-03-06 22:29:35,117 [INFO] Processing: 20260202_220257_test_file.md [normal] [file_drop] -> autonomous
+2026-03-06 22:29:35,118 [INFO] Ralph loop stopped. Tasks processed: 27
+2026-03-06 22:29:42,006 [INFO] PID 262425 written to /home/cosmicnoob/AI_Employee_Vault/ralph_loop.pid
+2026-03-06 22:29:42,006 [INFO] ==================================================
+2026-03-06 22:29:42,006 [INFO] Ralph Wiggum Task Loop Starting
+2026-03-06 22:29:42,006 [INFO] Mode: dry_run=False, once=True, scan_only=False, max=0
+2026-03-06 22:29:42,006 [INFO] ==================================================
+2026-03-06 22:29:42,006 [INFO] Stop sentinel detected — I'm in danger!
+2026-03-06 22:29:42,006 [INFO] Ralph loop stopped. Tasks processed: 0
+2026-03-06 22:49:20,557 [INFO] PID 264387 written to /home/cosmicnoob/AI_Employee_Vault/ralph_loop.pid
+2026-03-06 22:49:20,557 [INFO] ==================================================
+2026-03-06 22:49:20,557 [INFO] Ralph Wiggum Task Loop Starting
+2026-03-06 22:49:20,557 [INFO] Mode: dry_run=True, once=True, scan_only=False, max=0
+2026-03-06 22:49:20,557 [INFO] ==================================================
+2026-03-06 22:49:20,570 [WARNING] YAML parse error in EMAIL_19a6272a_20260206_185448.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""talentacquisition@asterdmhealthc ... 
+            ^
+2026-03-06 22:49:20,577 [WARNING] YAML parse error in EMAIL_19c908f7_20260226_224015.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""Booking.com" <noreply-iam@bookin ... 
+            ^
+2026-03-06 22:49:20,579 [INFO] Queue manifest written: /home/cosmicnoob/AI_Employee_Vault/Logs/ralph_queue.json (27 tasks)
+2026-03-06 22:49:20,579 [INFO] Queue: 27 tasks
+2026-03-06 22:49:20,580 [INFO] Processing: EMAIL_195285bf_20260206_185448.md [urgent] [email] -> needs_approval
+2026-03-06 22:49:20,580 [INFO] Processing: EMAIL_19583954_20260206_185448.md [urgent] [email] -> needs_approval
+2026-03-06 22:49:20,580 [INFO] Processing: EMAIL_194e9c26_20260206_185448.md [high] [email] -> needs_approval
+2026-03-06 22:49:20,580 [INFO] Processing: EMAIL_194ec1eb_20260206_185448.md [high] [email] -> needs_approval
+2026-03-06 22:49:20,580 [INFO] Processing: EMAIL_1957e94e_20260206_185448.md [high] [email] -> needs_approval
+2026-03-06 22:49:20,580 [INFO] Processing: EMAIL_19586646_20260206_185448.md [high] [email] -> needs_approval
+2026-03-06 22:49:20,580 [INFO] Processing: EMAIL_19c30829_20260206_185448.md [high] [email] -> needs_approval
+2026-03-06 22:49:20,580 [INFO] Processing: EMAIL_19c8e9c6_20260226_224015.md [high] [email] -> needs_approval
+2026-03-06 22:49:20,580 [INFO] Processing: EMAIL_19c9e370_20260227_152650.md [high] [email] -> needs_approval
+2026-03-06 22:49:20,581 [INFO] Processing: 20260204_185223_urgent_email.md [high] [file_drop] -> autonomous
+2026-03-06 22:49:20,581 [INFO] Processing: TEST_manual_task.md [high] [manual] -> autonomous
+2026-03-06 22:49:20,581 [INFO] Processing: EMAIL_196f9934_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:49:20,581 [INFO] Processing: EMAIL_1983c0c1_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:49:20,581 [INFO] Processing: EMAIL_199c7f34_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:49:20,581 [INFO] Processing: EMAIL_199c905a_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:49:20,581 [INFO] Processing: EMAIL_199ce195_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:49:20,581 [INFO] Processing: EMAIL_199e15ed_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:49:20,581 [INFO] Processing: EMAIL_199f14e4_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:49:20,581 [INFO] Processing: EMAIL_19a6272a_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:49:20,581 [INFO] Processing: EMAIL_19a63a25_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:49:20,582 [INFO] Processing: EMAIL_19b93119_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:49:20,582 [INFO] Processing: EMAIL_19bb6997_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:49:20,582 [INFO] Processing: EMAIL_19be1a6e_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:49:20,582 [INFO] Processing: EMAIL_19be711e_20260206_185448.md [normal] [email] -> needs_approval
+2026-03-06 22:49:20,582 [INFO] Processing: EMAIL_19c3c219_20260226_224015.md [normal] [email] -> needs_approval
+2026-03-06 22:49:20,582 [INFO] Processing: EMAIL_19c908f7_20260226_224015.md [normal] [email] -> needs_approval
+2026-03-06 22:49:20,582 [INFO] Processing: 20260202_220257_test_file.md [normal] [file_drop] -> autonomous
+2026-03-06 22:49:20,582 [INFO] Ralph loop stopped. Tasks processed: 27

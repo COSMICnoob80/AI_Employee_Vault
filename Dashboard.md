@@ -1,7 +1,7 @@
 ---
 type: dashboard
 created: 2026-02-02
-last_updated: 2026-02-25 14:30
+last_updated: 2026-03-10 19:58
 status: active
 pending_tasks: 4
 plans_created: 3
@@ -20,6 +20,12 @@ plans_created: 3
 | Goal Tracker | 🟢 Active | 2026-02-04 18:52 |
 | Scheduler | 🟢 Ready | 2026-02-26 |
 | MCP Gmail Send | 🟡 Ready | Not started |
+| LinkedIn Poster | 🟡 Ready | Not started |
+| CEO Briefing | 🟢 Ready | Not started |
+| Ralph Wiggum Loop | 🟢 Ready | Not started |
+| MCP Vault FS | 🟢 Ready | Not started |
+| MCP Vault Calendar | 🟡 Ready | Not started |
+| Cross-Domain Router | 🟢 Ready | Not started |
 
 ## Active Tasks
 
@@ -53,7 +59,7 @@ _Start watcher: `python ~/AI_Employee_Vault/Watchers/gmail_watcher.py`_
 | Tasks awaiting planning | 0 |
 | Tasks with plans | 22 |
 | Active plans | 22 |
-| Skills Documented | 7 |
+| Skills Documented | 12 |
 
 ## Approval Status
 
@@ -85,6 +91,65 @@ _Monitored by: `python ~/AI_Employee_Vault/Watchers/approval_watcher.py`_
 - Check status: `bash Scripts/schedule_watchers.sh status`
 - Install cron: `bash Scripts/cron_setup.sh install`
 - Remove cron: `bash Scripts/cron_setup.sh remove`
+
+## CEO Briefing Status
+
+| Metric | Value |
+|--------|-------|
+| Last Run | _Not started_ |
+| Last Report | — |
+| Schedule | Manual / Weekly |
+
+**Commands:**
+- Generate: `python Scripts/ceo_briefing.py`
+- Dry run: `python Scripts/ceo_briefing.py --dry-run`
+- Specific week: `python Scripts/ceo_briefing.py --week 2026-W10`
+
+## Ralph Wiggum Status
+
+| Metric | Value |
+|--------|-------|
+| Queue Size | _Not scanned_ |
+| Last Run | _Not started_ |
+| Tasks Processed | 0 |
+| Status | Idle |
+
+**Commands:**
+- Scan queue: `python Scripts/ralph_loop.py --scan-only`
+- Dry run: `python Scripts/ralph_loop.py --dry-run --once`
+- Single pass: `python Scripts/ralph_loop.py --once`
+- Continuous: `python Scripts/ralph_loop.py`
+- Stop: `touch .ralph_stop`
+
+## Personal Domain Status
+
+| Metric | Value |
+|--------|-------|
+| Gmail Inbox Tasks | _Run `python Scripts/cross_domain.py --domain personal`_ |
+| Calendar Events (7d) | _Run `python Scripts/cross_domain.py --domain personal`_ |
+| Personal Tasks Pending | _Run `python Scripts/cross_domain.py --domain personal`_ |
+
+## Business Domain Status
+
+| Metric | Value |
+|--------|-------|
+| LinkedIn Posts (week) | _Run `python Scripts/cross_domain.py --domain business`_ |
+| Business Tasks Pending | _Run `python Scripts/cross_domain.py --domain business`_ |
+| MCP Actions Today | _Run `python Scripts/cross_domain.py --domain business`_ |
+
+## Cross-Domain Health
+
+| Metric | Value |
+|--------|-------|
+| Domain Coverage | personal + business |
+| Last Unified Report | -- |
+
+**Commands:**
+- Unified summary: `python Scripts/cross_domain.py --dry-run`
+- Personal only: `python Scripts/cross_domain.py --domain personal`
+- Business only: `python Scripts/cross_domain.py --domain business`
+- Backfill tags: `python Scripts/cross_domain.py --backfill --dry-run`
+- JSON output: `python Scripts/cross_domain.py --json`
 
 ## Quick Links
 

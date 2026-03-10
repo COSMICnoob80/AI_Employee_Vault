@@ -6,4 +6,14 @@ __pycache__/
 .gmail_token.json
 .gmail_token_send.json
 .gmail_processed_ids.json
+.calendar_token.json
 credentials.json
+
+# LinkedIn session (sensitive)
+.linkedin_session/
+
+# Runtime audit log
+Logs/audit.jsonl
+
+# Generated reports
+Reports/*.md

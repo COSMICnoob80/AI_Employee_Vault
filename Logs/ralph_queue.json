@@ -1,0 +1,559 @@
+{
+  "generated": "2026-03-06T22:49:20.578809+05:00",
+  "total_tasks": 27,
+  "queue": [
+    {
+      "file": "EMAIL_195285bf_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_195285bf_20260206_185448.md",
+      "priority": "urgent",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "195285bf30b4983a",
+        "from": "Tyson 4D <tyson@tyson4d.com>",
+        "subject": "Your New Tyson 4D Account",
+        "received": "2025-02-21 11:54:28+00:00",
+        "priority": "urgent",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_195285bf_20260206_185448]]",
+        "keywords_matched": [
+          "immediate"
+        ]
+      }
+    },
+    {
+      "file": "EMAIL_19583954_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_19583954_20260206_185448.md",
+      "priority": "urgent",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "19583954b5141a12",
+        "from": "Tony Stubblebine <members@medium.com>",
+        "subject": "A letter from Tony Stubblebine, Medium CEO",
+        "received": "2025-03-11 05:02:33+00:00",
+        "priority": "urgent",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_19583954_20260206_185448]]",
+        "keywords_matched": [
+          "critical",
+          "important"
+        ]
+      }
+    },
+    {
+      "file": "EMAIL_194e9c26_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_194e9c26_20260206_185448.md",
+      "priority": "high",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "194e9c26e178efc3",
+        "from": "X <failed-payments+acct_1Ika5JA3KZ32dPo1@stripe.com>",
+        "subject": "Rs2,250.00 payment to X was unsuccessful again",
+        "received": "2025-02-09 08:10:21+00:00",
+        "priority": "high",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_194e9c26_20260206_185448]]",
+        "keywords_matched": [
+          "payment"
+        ]
+      }
+    },
+    {
+      "file": "EMAIL_194ec1eb_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_194ec1eb_20260206_185448.md",
+      "priority": "high",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "194ec1eb409033b2",
+        "from": "X <failed-payments+acct_1Ika5JA3KZ32dPo1@stripe.com>",
+        "subject": "Rs2,250.00 payment to X was unsuccessful again",
+        "received": "2025-02-09 19:10:22+00:00",
+        "priority": "high",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_194ec1eb_20260206_185448]]",
+        "keywords_matched": [
+          "payment"
+        ]
+      }
+    },
+    {
+      "file": "EMAIL_1957e94e_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_1957e94e_20260206_185448.md",
+      "priority": "high",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "1957e94e520b1475",
+        "from": "PIAIC Notification <notify@piaic.org>",
+        "subject": "PIAIC Admissions are OPEN - Certified Agentic, and Robotic AI Engineer",
+        "received": "2025-03-10 05:44:01+00:00",
+        "priority": "high",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_1957e94e_20260206_185448]]",
+        "keywords_matched": [
+          "important"
+        ]
+      }
+    },
+    {
+      "file": "EMAIL_19586646_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_19586646_20260206_185448.md",
+      "priority": "high",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "195866468c67f9d7",
+        "from": "PIAIC Notification <notify@piaic.org>",
+        "subject": "PIAIC Admissions are OPEN - Certified Agentic, and Robotic AI Engineer",
+        "received": "2025-03-11 18:08:01+00:00",
+        "priority": "high",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_19586646_20260206_185448]]",
+        "keywords_matched": [
+          "important"
+        ]
+      }
+    },
+    {
+      "file": "EMAIL_19c30829_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_19c30829_20260206_185448.md",
+      "priority": "high",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "19c30829a6d51821",
+        "from": "no-reply@nccpl.com.pk",
+        "subject": "Important Update: Pakistan Stock Market Transition to T+1 Settlement from 9 February 2026",
+        "received": "2026-02-06 06:12:58+05:00",
+        "priority": "high",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_19c30829_20260206_185448]]",
+        "keywords_matched": [
+          "important"
+        ]
+      }
+    },
+    {
+      "file": "EMAIL_19c8e9c6_20260226_224015.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_19c8e9c6_20260226_224015.md",
+      "priority": "high",
+      "type": "email",
+      "status": "pending",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "19c8e9c64f0a4ce7",
+        "from": "Finqalab <support@finqalab.com>",
+        "subject": "Update on Your Support Request \u2013 Ticket No. 011493 | Finqalab",
+        "received": "2026-02-24 07:45:39+00:00",
+        "priority": "high",
+        "status": "pending",
+        "keywords_matched": [
+          "important"
+        ]
+      }
+    },
+    {
+      "file": "EMAIL_19c9e370_20260227_152650.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_19c9e370_20260227_152650.md",
+      "priority": "high",
+      "type": "email",
+      "status": "pending",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "19c9e370e5db82d6",
+        "from": "Finqalab <support@finqalab.com>",
+        "subject": "Update on Your Support Request \u2013 Ticket No. 012089 | Finqalab",
+        "received": "2026-02-27 08:28:54+00:00",
+        "priority": "high",
+        "status": "pending",
+        "keywords_matched": [
+          "payment",
+          "important"
+        ]
+      }
+    },
+    {
+      "file": "20260204_185223_urgent_email.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/20260204_185223_urgent_email.md",
+      "priority": "high",
+      "type": "file_drop",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "file_drop",
+        "source": "urgent_email.txt",
+        "received": "2026-02-04 18:52:23.798235",
+        "status": "planned",
+        "priority": "high",
+        "plan_ref": "[[plan_urgent_email_processing]]"
+      }
+    },
+    {
+      "file": "TEST_manual_task.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/TEST_manual_task.md",
+      "priority": "high",
+      "type": "manual",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "manual",
+        "priority": "high",
+        "status": "planned",
+        "created": "$(date -Iseconds)"
+      }
+    },
+    {
+      "file": "EMAIL_196f9934_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_196f9934_20260206_185448.md",
+      "priority": "normal",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "196f99347372bd40",
+        "from": "eservices@cdspak.com.pk",
+        "subject": "Warrant #:4100782 - MEBL - Dividend/Zakat & Tax Deduction Report",
+        "received": "2025-05-22 21:37:17+05:00",
+        "priority": "normal",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_196f9934_20260206_185448]]",
+        "keywords_matched": []
+      }
+    },
+    {
+      "file": "EMAIL_1983c0c1_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_1983c0c1_20260206_185448.md",
+      "priority": "normal",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "1983c0c1c7c58a40",
+        "from": "NayaPay <service@nayapay.com>",
+        "subject": "Your OTP is 632707",
+        "received": "2025-07-24 15:48:02+05:00",
+        "priority": "normal",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_1983c0c1_20260206_185448]]",
+        "keywords_matched": []
+      }
+    },
+    {
+      "file": "EMAIL_199c7f34_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_199c7f34_20260206_185448.md",
+      "priority": "normal",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "199c7f34f9ed5318",
+        "from": "AAML <online@alfalahamc.com>",
+        "subject": "Risk Disclaimer of Investment Alert!",
+        "received": "2025-10-09 07:45:28+00:00",
+        "priority": "normal",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_199c7f34_20260206_185448]]",
+        "keywords_matched": []
+      }
+    },
+    {
+      "file": "EMAIL_199c905a_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_199c905a_20260206_185448.md",
+      "priority": "normal",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "199c905ac91062d2",
+        "from": "AAML <online@alfalahamc.com>",
+        "subject": "Welcome to Alfalah Asset Management Limited. (Activation)",
+        "received": "2025-10-09 12:45:11+00:00",
+        "priority": "normal",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_199c905a_20260206_185448]]",
+        "keywords_matched": []
+      }
+    },
+    {
+      "file": "EMAIL_199ce195_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_199ce195_20260206_185448.md",
+      "priority": "normal",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "199ce1952815e602",
+        "from": "foodpanda <contact@info.foodpanda.pk>",
+        "subject": "Here\u2019s your golden ticket. \ud83c\udf9f",
+        "received": "2025-10-10 12:29:01+00:00",
+        "priority": "normal",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_199ce195_20260206_185448]]",
+        "keywords_matched": []
+      }
+    },
+    {
+      "file": "EMAIL_199e15ed_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_199e15ed_20260206_185448.md",
+      "priority": "normal",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "199e15ed4ec82ef7",
+        "from": "AAML <online@alfalahamc.com>",
+        "subject": "One Time Password",
+        "received": "2025-10-14 06:13:33+00:00",
+        "priority": "normal",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_199e15ed_20260206_185448]]",
+        "keywords_matched": []
+      }
+    },
+    {
+      "file": "EMAIL_199f14e4_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_199f14e4_20260206_185448.md",
+      "priority": "normal",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "199f14e4c8e6a91f",
+        "from": "FAMCO Share Registration Services <famco.registrar@famco-srs.com>",
+        "subject": "Gul Ahmed Textile Mills Limited - 01651-42169",
+        "received": "2025-10-17 08:34:19+00:00",
+        "priority": "normal",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_199f14e4_20260206_185448]]",
+        "keywords_matched": []
+      }
+    },
+    {
+      "file": "EMAIL_19a6272a_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_19a6272a_20260206_185448.md",
+      "priority": "normal",
+      "type": "email",
+      "status": "unknown",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {}
+    },
+    {
+      "file": "EMAIL_19a63a25_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_19a63a25_20260206_185448.md",
+      "priority": "normal",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "19a63a25185b2659",
+        "from": "X <invoice+statements+acct_1Ika5JA3KZ32dPo1@stripe.com>",
+        "subject": "Your receipt from X #2901-9026-6660",
+        "received": "2025-11-08 13:22:52+00:00",
+        "priority": "normal",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_19a63a25_20260206_185448]]",
+        "keywords_matched": []
+      }
+    },
+    {
+      "file": "EMAIL_19b93119_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_19b93119_20260206_185448.md",
+      "priority": "normal",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "19b9311991543d13",
+        "from": "NayaPay <service@nayapay.com>",
+        "subject": "Your OTP is 140639",
+        "received": "2026-01-06 16:29:21+05:00",
+        "priority": "normal",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_19b93119_20260206_185448]]",
+        "keywords_matched": []
+      }
+    },
+    {
+      "file": "EMAIL_19bb6997_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_19bb6997_20260206_185448.md",
+      "priority": "normal",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "19bb6997a3219d63",
+        "from": "Dr Phil McElnay <phil.mcelnay@info.medall.org>",
+        "subject": "Thrombosis Care: Improve Patient Outcomes",
+        "received": "2026-01-13 06:57:02",
+        "priority": "normal",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_19bb6997_20260206_185448]]",
+        "keywords_matched": []
+      }
+    },
+    {
+      "file": "EMAIL_19be1a6e_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_19be1a6e_20260206_185448.md",
+      "priority": "normal",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "19be1a6efd39187b",
+        "from": "GitHub <noreply@github.com>",
+        "subject": "[GitHub] Please review this sign in",
+        "received": "2026-01-21 09:42:51-08:00",
+        "priority": "normal",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_19be1a6e_20260206_185448]]",
+        "keywords_matched": []
+      }
+    },
+    {
+      "file": "EMAIL_19be711e_20260206_185448.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_19be711e_20260206_185448.md",
+      "priority": "normal",
+      "type": "email",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "19be711ea2ec91f9",
+        "from": "Railway <hello@notify.railway.app>",
+        "subject": "Start Collecting Referral Credits",
+        "received": "2026-01-22 18:57:49+00:00",
+        "priority": "normal",
+        "status": "planned",
+        "plan_ref": "[[PLAN_EMAIL_19be711e_20260206_185448]]",
+        "keywords_matched": []
+      }
+    },
+    {
+      "file": "EMAIL_19c3c219_20260226_224015.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_19c3c219_20260226_224015.md",
+      "priority": "normal",
+      "type": "email",
+      "status": "pending",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "email",
+        "message_id": "19c3c219c337a766",
+        "from": "GitHub <noreply@github.com>",
+        "subject": "[GitHub] Please verify your device",
+        "received": "2026-02-07 23:22:41-08:00",
+        "priority": "normal",
+        "status": "pending",
+        "keywords_matched": []
+      }
+    },
+    {
+      "file": "EMAIL_19c908f7_20260226_224015.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/EMAIL_19c908f7_20260226_224015.md",
+      "priority": "normal",
+      "type": "email",
+      "status": "unknown",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {}
+    },
+    {
+      "file": "20260202_220257_test_file.md",
+      "path": "/home/cosmicnoob/AI_Employee_Vault/Needs_Action/20260202_220257_test_file.md",
+      "priority": "normal",
+      "type": "file_drop",
+      "status": "planned",
+      "has_plan": false,
+      "plan_path": null,
+      "age_days": 0,
+      "frontmatter": {
+        "type": "file_drop",
+        "source": "test_file.txt",
+        "received": "2026-02-02 22:02:57.522382",
+        "status": "planned",
+        "priority": "normal",
+        "plan_ref": "[[plan_test_file_processing]]"
+      }
+    }
+  ]
+}

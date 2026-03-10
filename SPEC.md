@@ -3,8 +3,9 @@ type: spec
 project: AI Employee Vault
 owner: cosmicnoob
 created: 2026-02-28
-current_tier: silver
-tier_progress: 6/7
+last_updated: 2026-03-10 19:58
+current_tier: gold
+tier_progress: 5/7
 ---
 
 # AI Employee Vault — Project Spec
@@ -39,23 +40,24 @@ tier_progress: 6/7
 - Folder structure: Inbox/, Needs_Action/, Done/
 - Filesystem watcher script
 
-### Silver 🟡 6/7
+### Silver ✅ 8/8
 - [x] S1: Gmail watcher (OAuth2, read-only)
 - [x] S2: Human-in-the-loop approval workflow
-- [ ] S3: Full inbox → email → task pipeline
+- [x] S3: Auto LinkedIn posting (Playwright)
 - [x] S4: Automated task planner
 - [x] S5: MCP Gmail Send server
 - [x] S6: HITL verification (independent)
 - [x] S7: Scheduling/cron system
 - [x] S8: All skills documented (7/7)
 
-### Gold ⏳ Planned
-- Odoo Community integration (JSON-RPC MCP server)
-- WhatsApp watcher for customer communication
-- LinkedIn/Twitter automated posting with scheduling
-- Multi-source financial integration (bank CSV, Stripe, PayPal)
-- Ralph Wiggum Stop hook for iterative task completion
-- Cross-domain integration (Personal + Business)
+### Gold 🟡 5/7
+- [x] G1: Weekly CEO Briefing Generator
+- [x] G2: Error Recovery + Audit Logging
+- [x] G3: Ralph Wiggum Task Loop
+- [x] G4: Additional MCP Servers
+- [x] G5: Cross-Domain Integration
+- [ ] G6: Odoo Community Integration
+- [ ] G7: Social Media (FB/IG/Twitter)
 
 ### Platinum ⏳ Future
 - Cloud 24/7 deployment (Oracle/AWS Free Tier)
@@ -79,14 +81,21 @@ tier_progress: 6/7
 | Server | Tool |
 |--------|------|
 | `MCP/gmail_send_server.py` | `send_email(to, subject, body, dry_run)` |
+| `MCP/filesystem_server.py` | `read_file`, `write_file`, `move_file`, `list_folder`, `search_vault` |
+| `MCP/calendar_server.py` | `list_events`, `create_event`, `check_availability` |
 
 ### Scripts
 | Script | Purpose |
 |--------|---------|
 | `Scripts/schedule_watchers.sh` | Start/stop/status for all watchers |
 | `Scripts/cron_setup.sh` | Cron install/remove (5-min keep-alive) |
+| `Scripts/linkedin_poster.py` | Playwright LinkedIn text auto-poster |
+| `Scripts/ceo_briefing.py` | Weekly CEO Briefing report generator |
+| `Scripts/ralph_loop.py` | Ralph Wiggum autonomous task execution loop |
+| `Scripts/ralph_hooks.sh` | PostToolUse hook for audit logging |
+| `Scripts/cross_domain.py` | Cross-domain query, routing, and unified view |
 
-### Skills (7)
+### Skills (13)
 | Skill | File |
 |-------|------|
 | Email Classifier | [[email_classifier]] |
@@ -96,6 +105,12 @@ tier_progress: 6/7
 | Task Planner | [[task_planner]] |
 | Scheduler | [[scheduler]] |
 | MCP Gmail Send | [[mcp_gmail_send]] |
+| LinkedIn Poster | [[linkedin_poster]] |
+| CEO Briefing | [[ceo_briefing]] |
+| Ralph Wiggum | [[ralph_wiggum]] |
+| MCP Vault FS | [[mcp_vault_fs]] |
+| MCP Vault Calendar | [[mcp_vault_calendar]] |
+| Cross-Domain Integration | [[cross_domain_integration]] |
 
 ### Core Docs
 - [[Dashboard]] — Central status hub

@@ -4,9 +4,9 @@ action_type: email_send
 requested: 2026-02-25T14:30:00
 status: done
 priority: high
+domain: personal
 threshold_exceeded: external_communication
-requester: AI_Employee
----
+requester: AI_Employee---
 
 # Approval Request: Send Project Status Email
 

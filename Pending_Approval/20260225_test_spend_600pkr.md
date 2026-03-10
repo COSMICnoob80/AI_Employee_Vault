@@ -4,10 +4,10 @@ action_type: financial
 requested: 2026-02-25T15:00:00
 status: pending_approval
 priority: normal
+domain: personal
 threshold_exceeded: financial_above_500pkr
 requester: AI_Employee
-value_pkr: 600
----
+value_pkr: 600---
 
 # Approval Request: Software Subscription Purchase
 

@@ -1,9 +1,9 @@
 ---
 type: manual
 priority: high
+domain: personal
 status: planned
-created: $(date -Iseconds)
----
+created: $(date -Iseconds)---
 
 # Test Task: Review Quarterly Budget
 

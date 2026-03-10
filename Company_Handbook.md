@@ -59,6 +59,7 @@ All requests use YAML frontmatter with these fields:
 - `status`: pending_approval → approved → done
 - `priority`: low | normal | high | critical
 - `requester`: AI_Employee
+- `domain`: personal | business | cross-domain
 
 ### Monitoring
 

@@ -11,6 +11,11 @@ All documented capabilities of the AI Employee system.
 | Task Planner | [[task_planner]] | Generates step-by-step plans from task files |
 | Scheduler | [[scheduler]] | Automated watcher startup, self-healing, and cron management |
 | MCP Gmail Send | [[mcp_gmail_send]] | MCP server exposing send_email tool via Gmail API |
+| LinkedIn Poster | [[linkedin_poster]] | Automated LinkedIn text posting via Playwright |
+| CEO Briefing | [[ceo_briefing]] | Aggregates vault data into weekly executive status report |
+| Ralph Wiggum | [[ralph_wiggum]] | Autonomous task execution loop with priority queue and approval routing |
+| MCP Vault FS | [[mcp_vault_fs]] | MCP server for safe vault file operations with path validation |
+| MCP Vault Calendar | [[mcp_vault_calendar]] | MCP server for Google Calendar operations via OAuth2 |
 
 ## Standard Skill Format
 

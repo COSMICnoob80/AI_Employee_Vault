@@ -13,7 +13,7 @@ LOG_DIR="$VAULT_ROOT/Logs"
 LOG_FILE="$LOG_DIR/scheduler.log"
 PYTHON="python3"
 
-WATCHERS=(filesystem_watcher gmail_watcher approval_watcher)
+WATCHERS=(filesystem_watcher gmail_watcher approval_watcher linkedin_poster ralph_loop)
 
 mkdir -p "$LOG_DIR"
 
@@ -44,6 +44,10 @@ is_alive() {
 start_watcher() {
     local name="$1"
     local script="$VAULT_ROOT/Watchers/${name}.py"
+    # Fallback to Scripts/ directory
+    if [[ ! -f "$script" ]]; then
+        script="$VAULT_ROOT/Scripts/${name}.py"
+    fi
 
     if is_alive "$name"; then
         local pid
@@ -55,6 +59,12 @@ start_watcher() {
     # Gmail special case: skip if credentials missing
     if [[ "$name" == "gmail_watcher" ]] && [[ ! -f "$VAULT_ROOT/credentials.json" ]]; then
         log "WARN" "$name skipped — credentials.json not found"
+        return 0
+    fi
+
+    # LinkedIn special case: skip if no saved session
+    if [[ "$name" == "linkedin_poster" ]] && [[ ! -f "$VAULT_ROOT/.linkedin_session/state.json" ]]; then
+        log "WARN" "$name skipped — no session (run manually first)"
         return 0
     fi
 

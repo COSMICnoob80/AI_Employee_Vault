@@ -20,6 +20,8 @@ import logging
 from datetime import datetime
 from pathlib import Path
 
+from vault_audit import audit_log, safe_write, ErrorTracker
+
 try:
     from watchdog.observers import Observer
     from watchdog.events import FileSystemEventHandler
@@ -100,6 +102,7 @@ class PendingApprovalHandler(FileSystemEventHandler):
 
     def __init__(self):
         self.processed_files = set()
+        self.error_tracker = ErrorTracker("approval_watcher_pending")
 
     def on_created(self, event):
         """Called when a file is created in Pending_Approval."""
@@ -115,11 +118,16 @@ class PendingApprovalHandler(FileSystemEventHandler):
         # Small delay to ensure file is fully written
         time.sleep(0.5)
 
+        self.error_tracker.check()
         try:
             self._process_file(filepath)
             self.processed_files.add(filepath)
         except Exception as e:
             logger.error(f"Failed to process {filepath.name}: {e}")
+            self.error_tracker.record_error(str(e))
+            audit_log("error", "approval_watcher",
+                      {"function": "pending_on_created", "file": filepath.name},
+                      "error", str(e))
 
     def _process_file(self, filepath: Path):
         """Log the new pending approval request."""
@@ -132,6 +140,9 @@ class PendingApprovalHandler(FileSystemEventHandler):
             f"New approval request: {filepath.name} "
             f"| Type: {action_type} | Priority: {priority}"
         )
+        audit_log("approval_pending", "approval_watcher",
+                  {"file": filepath.name, "action_type": action_type,
+                   "priority": priority})
 
 
 class ApprovedHandler(FileSystemEventHandler):
@@ -139,6 +150,7 @@ class ApprovedHandler(FileSystemEventHandler):
 
     def __init__(self):
         self.processed_files = set()
+        self.error_tracker = ErrorTracker("approval_watcher_approved")
 
     def on_created(self, event):
         """Called when a file is created in Approved."""
@@ -154,11 +166,16 @@ class ApprovedHandler(FileSystemEventHandler):
         # Small delay to ensure file is fully written
         time.sleep(0.5)
 
+        self.error_tracker.check()
         try:
             self._process_file(filepath)
             self.processed_files.add(filepath)
         except Exception as e:
             logger.error(f"Failed to process {filepath.name}: {e}")
+            self.error_tracker.record_error(str(e))
+            audit_log("error", "approval_watcher",
+                      {"function": "approved_on_created", "file": filepath.name},
+                      "error", str(e))
 
     def _process_file(self, filepath: Path):
         """Log the approval and archive to Done."""
@@ -169,6 +186,8 @@ class ApprovedHandler(FileSystemEventHandler):
             f"Approved: {filepath.name} "
             f"| Type: {action_type} | Ready for execution"
         )
+        audit_log("approval_approved", "approval_watcher",
+                  {"file": filepath.name, "action_type": action_type})
 
         # Copy to Done with status updated
         done_path = DONE_DIR / filepath.name
@@ -177,14 +196,19 @@ class ApprovedHandler(FileSystemEventHandler):
             content = content.replace(
                 'status: pending_approval', 'status: done'
             )
-            done_path.write_text(content, encoding='utf-8')
+            safe_write(done_path, content)
         except UnicodeDecodeError:
             shutil.copy2(filepath, done_path)
         except Exception as e:
             logger.error(f"Failed to archive {filepath.name}: {e}")
+            audit_log("error", "approval_watcher",
+                      {"function": "archive", "file": filepath.name},
+                      "error", str(e))
             return
 
         logger.info(f"Archived to Done: {filepath.name}")
+        audit_log("task_archived", "approval_watcher",
+                  {"file": filepath.name, "dest": str(done_path)})
 
 
 def main():
@@ -201,6 +225,8 @@ def main():
     logger.info(f"Archive to: {DONE_DIR}")
     logger.info("Press Ctrl+C to stop")
     logger.info("=" * 50)
+    audit_log("watcher_start", "approval_watcher",
+              {"monitoring": [str(PENDING_DIR), str(APPROVED_DIR)]})
 
     # Setup watchers
     pending_handler = PendingApprovalHandler()
@@ -221,10 +247,14 @@ def main():
         logger.info("Stopping watcher...")
         observer_pending.stop()
         observer_approved.stop()
+        audit_log("watcher_stop", "approval_watcher",
+                  {"reason": "keyboard_interrupt"})
     except Exception as e:
         logger.error(f"Watcher error: {e}")
         observer_pending.stop()
         observer_approved.stop()
+        audit_log("watcher_stop", "approval_watcher",
+                  {"reason": "error"}, "error", str(e))
 
     observer_pending.join()
     observer_approved.join()

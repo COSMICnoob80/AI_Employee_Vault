@@ -19,6 +19,8 @@ import logging
 from datetime import datetime
 from pathlib import Path
 
+from vault_audit import audit_log, safe_write, ErrorTracker
+
 try:
     from watchdog.observers import Observer
     from watchdog.events import FileSystemEventHandler
@@ -50,6 +52,7 @@ class InboxHandler(FileSystemEventHandler):
 
     def __init__(self):
         self.processed_files = set()
+        self.error_tracker = ErrorTracker("filesystem_watcher")
 
     def on_created(self, event):
         """Called when a file is created in the watched directory."""
@@ -65,15 +68,22 @@ class InboxHandler(FileSystemEventHandler):
         # Small delay to ensure file is fully written
         time.sleep(0.5)
 
+        self.error_tracker.check()
         try:
             self._process_file(filepath)
             self.processed_files.add(filepath)
         except Exception as e:
             logger.error(f"Failed to process {filepath.name}: {e}")
+            self.error_tracker.record_error(str(e))
+            audit_log("error", "filesystem_watcher",
+                      {"function": "on_created", "file": filepath.name},
+                      "error", str(e))
 
     def _process_file(self, filepath: Path):
         """Read file and create task in Needs_Action."""
         logger.info(f"New file detected: {filepath.name}")
+        audit_log("file_detected", "filesystem_watcher",
+                  {"file": filepath.name})
 
         # Read source content
         try:
@@ -88,6 +98,10 @@ class InboxHandler(FileSystemEventHandler):
         task_filename = f"{timestamp.strftime('%Y%m%d_%H%M%S')}_{filepath.stem}.md"
         task_path = NEEDS_ACTION_DIR / task_filename
 
+        # Detect domain from filename keywords
+        BUSINESS_FILE_KEYWORDS = {"invoice", "contract", "client", "project", "meeting-notes", "quarterly", "budget", "proposal"}
+        detected_domain = "business" if any(kw in filepath.name.lower() for kw in BUSINESS_FILE_KEYWORDS) else "personal"
+
         # Create task content with YAML frontmatter
         task_content = f"""---
 type: file_drop
@@ -95,6 +109,7 @@ source: {filepath.name}
 received: {timestamp.isoformat()}
 status: pending
 priority: normal
+domain: {detected_domain}
 ---
 
 # Task: Process {filepath.name}
@@ -117,9 +132,11 @@ priority: normal
 - [ ] Move to Done when complete
 """
 
-        # Write task file
-        task_path.write_text(task_content, encoding='utf-8')
+        # Write task file (atomic)
+        safe_write(task_path, task_content)
         logger.info(f"Task created: {task_path.name}")
+        audit_log("task_created", "filesystem_watcher",
+                  {"file": task_path.name, "source": filepath.name})
 
 
 def main():
@@ -134,6 +151,8 @@ def main():
     logger.info(f"Output to:  {NEEDS_ACTION_DIR}")
     logger.info("Press Ctrl+C to stop")
     logger.info("=" * 50)
+    audit_log("watcher_start", "filesystem_watcher",
+              {"monitoring": str(INBOX_DIR)})
 
     # Setup watcher
     event_handler = InboxHandler()
@@ -147,9 +166,13 @@ def main():
     except KeyboardInterrupt:
         logger.info("Stopping watcher...")
         observer.stop()
+        audit_log("watcher_stop", "filesystem_watcher",
+                  {"reason": "keyboard_interrupt"})
     except Exception as e:
         logger.error(f"Watcher error: {e}")
         observer.stop()
+        audit_log("watcher_stop", "filesystem_watcher",
+                  {"reason": "error"}, "error", str(e))
 
     observer.join()
     logger.info("Watcher stopped.")

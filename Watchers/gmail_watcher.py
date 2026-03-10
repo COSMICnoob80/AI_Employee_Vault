@@ -26,6 +26,8 @@ from email.utils import parsedate_to_datetime
 import base64
 import re
 
+from vault_audit import audit_log, safe_write, ErrorTracker
+
 # Force IPv4 — httplib2 fails on IPv6-only DNS resolution
 _orig_getaddrinfo = socket.getaddrinfo
 def _ipv4_getaddrinfo(*args, **kwargs):
@@ -88,6 +90,7 @@ class GmailWatcher:
         self.service = None
         self.processed_ids = self._load_processed_ids()
         self.retry_delay = 1  # For exponential backoff
+        self.error_tracker = ErrorTracker("gmail_watcher")
 
     def _load_processed_ids(self) -> set:
         """Load previously processed message IDs."""
@@ -103,7 +106,7 @@ class GmailWatcher:
         """Save processed message IDs."""
         if not self.dry_run:
             data = {"processed_ids": list(self.processed_ids)}
-            PROCESSED_IDS_FILE.write_text(json.dumps(data, indent=2))
+            safe_write(PROCESSED_IDS_FILE, json.dumps(data, indent=2))
 
     def authenticate(self) -> bool:
         """Authenticate with Gmail API using OAuth2."""
@@ -256,6 +259,9 @@ class GmailWatcher:
 
         except HttpError as e:
             logger.error(f"Gmail API error: {e}")
+            self.error_tracker.record_error(str(e))
+            audit_log("error", "gmail_watcher",
+                      {"function": "fetch_important_emails"}, "error", str(e))
             # Exponential backoff
             self.retry_delay = min(self.retry_delay * 2, 300)
             return []
@@ -289,6 +295,10 @@ class GmailWatcher:
         # Gmail link
         gmail_link = f"https://mail.google.com/mail/u/0/#inbox/{msg_id}"
 
+        # Detect domain from sender/subject
+        BUSINESS_SENDER_KEYWORDS = {"invoice", "payment", "contract", "finqalab", "client", "project", "quarterly", "compliance", "hr@", "finance@", "billing"}
+        domain = "business" if any(kw in sender.lower() or kw in subject.lower() for kw in BUSINESS_SENDER_KEYWORDS) else "personal"
+
         task_content = f"""---
 type: email
 message_id: {msg_id}
@@ -298,6 +308,7 @@ received: {received.isoformat()}
 priority: {priority}
 status: pending
 keywords_matched: {json.dumps(keywords_matched)}
+domain: {domain}
 ---
 
 # Email: {subject[:50]}{'...' if len(subject) > 50 else ''}
@@ -330,13 +341,17 @@ keywords_matched: {json.dumps(keywords_matched)}
             logger.info(f"  Subject: {subject}")
             logger.info(f"  Priority: {priority}")
         else:
-            task_path.write_text(task_content, encoding="utf-8")
+            safe_write(task_path, task_content)
             logger.info(f"Task created: {task_filename}")
+            audit_log("task_created", "gmail_watcher",
+                      {"file": task_filename, "priority": priority,
+                       "sender": sender, "msg_id": msg_id})
 
         self.processed_ids.add(msg_id)
 
     def run_once(self) -> dict:
         """Run a single check cycle. Returns stats."""
+        self.error_tracker.check()
         stats = {"checked": 0, "new_tasks": 0, "errors": 0}
 
         emails = self.fetch_important_emails()
@@ -348,6 +363,11 @@ keywords_matched: {json.dumps(keywords_matched)}
                 stats["new_tasks"] += 1
             except Exception as e:
                 logger.error(f"Failed to process email: {e}")
+                self.error_tracker.record_error(str(e))
+                audit_log("error", "gmail_watcher",
+                          {"function": "create_task",
+                           "msg_id": email.get("id", "?")},
+                          "error", str(e))
                 stats["errors"] += 1
 
         self._save_processed_ids()
@@ -362,6 +382,8 @@ keywords_matched: {json.dumps(keywords_matched)}
         logger.info(f"Output to: {NEEDS_ACTION_DIR}")
         logger.info("Press Ctrl+C to stop")
         logger.info("=" * 50)
+        audit_log("watcher_start", "gmail_watcher",
+                  {"mode": "dry-run" if self.dry_run else "live"})
 
         try:
             while True:
@@ -377,6 +399,7 @@ keywords_matched: {json.dumps(keywords_matched)}
         except KeyboardInterrupt:
             logger.info("Stopping Gmail watcher...")
             self._save_processed_ids()
+            audit_log("watcher_stop", "gmail_watcher", {"reason": "keyboard_interrupt"})
             logger.info("Gmail watcher stopped.")
 
 
