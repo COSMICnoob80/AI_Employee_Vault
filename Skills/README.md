@@ -16,6 +16,9 @@ All documented capabilities of the AI Employee system.
 | Ralph Wiggum | [[ralph_wiggum]] | Autonomous task execution loop with priority queue and approval routing |
 | MCP Vault FS | [[mcp_vault_fs]] | MCP server for safe vault file operations with path validation |
 | MCP Vault Calendar | [[mcp_vault_calendar]] | MCP server for Google Calendar operations via OAuth2 |
+| Cross-Domain Integration | [[cross_domain_integration]] | Unified view across personal and business domains with routing |
+| Odoo Accounting | [[odoo_accounting]] | MCP server for Odoo Community accounting via JSON-RPC |
+| Social Media Poster | [[social_media_poster]] | Automated posting to FB/IG/Twitter via Playwright with MCP server |
 
 ## Standard Skill Format
 

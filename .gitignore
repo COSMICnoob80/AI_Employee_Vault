@@ -12,8 +12,12 @@ credentials.json
 # LinkedIn session (sensitive)
 .linkedin_session/
 
+# Social media sessions (sensitive)
+.social_sessions/
+
 # Runtime audit log
 Logs/audit.jsonl
 
 # Generated reports
 Reports/*.md
+.env.odoo

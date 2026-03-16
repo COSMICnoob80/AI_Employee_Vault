@@ -193,6 +193,38 @@ class CEOBriefingGenerator:
 
         return completed
 
+    def collect_social_media_data(self) -> dict:
+        """Filter Done/ for social media posts (facebook, instagram, twitter), grouped by platform."""
+        platforms = {"facebook": [], "instagram": [], "twitter": []}
+        this_week = {"facebook": [], "instagram": [], "twitter": []}
+        if not DONE_DIR.exists():
+            return {"all": platforms, "this_week": this_week}
+
+        for filepath in sorted(DONE_DIR.glob("*.md")):
+            fm = parse_frontmatter(filepath)
+            action = fm.get("action_type", "")
+            for platform in platforms:
+                if action == f"{platform}_post":
+                    post_info = {
+                        "file": filepath.name,
+                        "posted": str(fm.get("posted", fm.get("created", "unknown"))),
+                    }
+                    platforms[platform].append(post_info)
+
+                    for ts_field in ["posted", "created"]:
+                        ts_val = fm.get(ts_field)
+                        if ts_val:
+                            try:
+                                ts_str = str(ts_val).replace("T", " ")[:19]
+                                ts = datetime.fromisoformat(ts_str)
+                                if self.week_start <= ts <= self.week_end + timedelta(days=1):
+                                    this_week[platform].append(post_info)
+                                    break
+                            except (ValueError, TypeError):
+                                continue
+
+        return {"all": platforms, "this_week": this_week}
+
     def collect_linkedin_activity(self) -> dict:
         """Filter Done/ for action_type: linkedin_post."""
         all_posts = []
@@ -318,6 +350,7 @@ class CEOBriefingGenerator:
         stats = self.collect_task_stats()
         completed = self.collect_completed_this_week()
         linkedin = self.collect_linkedin_activity()
+        social = self.collect_social_media_data()
         health = self.collect_system_health()
         approvals = self.collect_pending_approvals()
         action_items = self.build_action_items(emails, approvals, health)
@@ -444,6 +477,34 @@ class CEOBriefingGenerator:
                 lines.append(f"  - {post['file']} (posted: {post['posted']})")
         lines.append("")
 
+        # 5b. Social Media Activity
+        social_all = social["all"]
+        social_week = social["this_week"]
+        total_social_all = sum(len(v) for v in social_all.values())
+        total_social_week = sum(len(v) for v in social_week.values())
+
+        lines.append("## Social Media Activity")
+        lines.append("")
+        lines.append(f"- **Social posts this week:** {total_social_week}")
+        lines.append(f"- **All-time social posts:** {total_social_all}")
+        lines.append("")
+        lines.append("| Platform | This Week | All-Time |")
+        lines.append("|----------|-----------|----------|")
+        for platform in ("facebook", "instagram", "twitter"):
+            lines.append(
+                f"| {platform.title()} | {len(social_week.get(platform, []))} "
+                f"| {len(social_all.get(platform, []))} |"
+            )
+        lines.append("")
+
+        if total_social_week > 0:
+            lines.append("### This Week's Posts")
+            lines.append("")
+            for platform in ("facebook", "instagram", "twitter"):
+                for post in social_week.get(platform, []):
+                    lines.append(f"  - [{platform.title()}] {post['file']} (posted: {post['posted']})")
+            lines.append("")
+
         # 6. System Health
         lines.append("## System Health")
         lines.append("")
@@ -487,6 +548,8 @@ class CEOBriefingGenerator:
         lines.append(f"| Pending approvals | {len(approvals)} |")
         lines.append(f"| LinkedIn posts this week | {len(linkedin['this_week'])} |")
         lines.append(f"| LinkedIn posts all-time | {len(linkedin['all_posts'])} |")
+        lines.append(f"| Social media posts this week | {total_social_week} |")
+        lines.append(f"| Social media posts all-time | {total_social_all} |")
         running_count = len([w for w in health if w["status"] == "running"])
         lines.append(f"| Watchers running | {running_count}/{len(health)} |")
         lines.append(f"| Total done (all time) | {stats['done']} |")

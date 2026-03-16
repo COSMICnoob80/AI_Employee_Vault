@@ -13,7 +13,7 @@ LOG_DIR="$VAULT_ROOT/Logs"
 LOG_FILE="$LOG_DIR/scheduler.log"
 PYTHON="python3"
 
-WATCHERS=(filesystem_watcher gmail_watcher approval_watcher linkedin_poster ralph_loop)
+WATCHERS=(filesystem_watcher gmail_watcher approval_watcher linkedin_poster ralph_loop social_poster)
 
 mkdir -p "$LOG_DIR"
 
@@ -66,6 +66,21 @@ start_watcher() {
     if [[ "$name" == "linkedin_poster" ]] && [[ ! -f "$VAULT_ROOT/.linkedin_session/state.json" ]]; then
         log "WARN" "$name skipped — no session (run manually first)"
         return 0
+    fi
+
+    # Social poster special case: skip if no social sessions exist
+    if [[ "$name" == "social_poster" ]]; then
+        local has_session=false
+        for platform_dir in "$VAULT_ROOT/.social_sessions"/*/; do
+            if [[ -f "${platform_dir}state.json" ]]; then
+                has_session=true
+                break
+            fi
+        done
+        if [[ "$has_session" == "false" ]]; then
+            log "WARN" "$name skipped — no social sessions (run manually first per platform)"
+            return 0
+        fi
     fi
 
     if [[ ! -f "$script" ]]; then

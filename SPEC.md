@@ -3,9 +3,9 @@ type: spec
 project: AI Employee Vault
 owner: cosmicnoob
 created: 2026-02-28
-last_updated: 2026-03-10 19:58
+last_updated: 2026-03-14 18:18
 current_tier: gold
-tier_progress: 5/7
+tier_progress: 7/7
 ---
 
 # AI Employee Vault — Project Spec
@@ -50,14 +50,14 @@ tier_progress: 5/7
 - [x] S7: Scheduling/cron system
 - [x] S8: All skills documented (7/7)
 
-### Gold 🟡 5/7
+### Gold ✅ 7/7
 - [x] G1: Weekly CEO Briefing Generator
 - [x] G2: Error Recovery + Audit Logging
 - [x] G3: Ralph Wiggum Task Loop
 - [x] G4: Additional MCP Servers
 - [x] G5: Cross-Domain Integration
-- [ ] G6: Odoo Community Integration
-- [ ] G7: Social Media (FB/IG/Twitter)
+- [x] G6: Odoo Community Integration
+- [x] G7: Social Media (FB/IG/Twitter)
 
 ### Platinum ⏳ Future
 - Cloud 24/7 deployment (Oracle/AWS Free Tier)
@@ -83,6 +83,8 @@ tier_progress: 5/7
 | `MCP/gmail_send_server.py` | `send_email(to, subject, body, dry_run)` |
 | `MCP/filesystem_server.py` | `read_file`, `write_file`, `move_file`, `list_folder`, `search_vault` |
 | `MCP/calendar_server.py` | `list_events`, `create_event`, `check_availability` |
+| `MCP/odoo_server.py` | `list_invoices`, `get_invoice`, `create_invoice`, `list_accounts`, `get_journal_entries`, `accounting_summary` |
+| `MCP/social_media_server.py` | `post_facebook`, `post_instagram`, `post_twitter`, `get_social_summary` |
 
 ### Scripts
 | Script | Purpose |
@@ -94,8 +96,9 @@ tier_progress: 5/7
 | `Scripts/ralph_loop.py` | Ralph Wiggum autonomous task execution loop |
 | `Scripts/ralph_hooks.sh` | PostToolUse hook for audit logging |
 | `Scripts/cross_domain.py` | Cross-domain query, routing, and unified view |
+| `Scripts/social_poster.py` | Social media auto-poster (FB/IG/Twitter via Playwright) |
 
-### Skills (13)
+### Skills (15)
 | Skill | File |
 |-------|------|
 | Email Classifier | [[email_classifier]] |
@@ -111,6 +114,8 @@ tier_progress: 5/7
 | MCP Vault FS | [[mcp_vault_fs]] |
 | MCP Vault Calendar | [[mcp_vault_calendar]] |
 | Cross-Domain Integration | [[cross_domain_integration]] |
+| Odoo Accounting | [[odoo_accounting]] |
+| Social Media Poster | [[social_media_poster]] |
 
 ### Core Docs
 - [[Dashboard]] — Central status hub

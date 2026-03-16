@@ -1,0 +1,30 @@
+2026-03-14 17:08:08,854 [INFO] ==================================================
+2026-03-14 17:08:08,854 [INFO] Social Media Poster Starting
+2026-03-14 17:08:08,854 [INFO] Platforms: facebook, instagram, twitter
+2026-03-14 17:08:08,854 [INFO] Watching: /home/cosmicnoob/AI_Employee_Vault/Approved
+2026-03-14 17:08:08,854 [INFO] Archive to: /home/cosmicnoob/AI_Employee_Vault/Done
+2026-03-14 17:08:08,854 [INFO] Mode: DRY RUN (no browser)
+2026-03-14 17:08:08,854 [INFO] Mode: Single check
+2026-03-14 17:08:08,854 [INFO] ==================================================
+2026-03-14 17:08:08,858 [INFO] Processed 0 post(s). Exiting.
+2026-03-14 17:08:25,296 [INFO] Summary written to /home/cosmicnoob/AI_Employee_Vault/Logs/social_summary.md
+2026-03-14 17:37:07,861 [INFO] ==================================================
+2026-03-14 17:37:07,861 [INFO] Social Media Poster Starting
+2026-03-14 17:37:07,861 [INFO] Platforms: twitter
+2026-03-14 17:37:07,861 [INFO] Watching: /home/cosmicnoob/AI_Employee_Vault/Approved
+2026-03-14 17:37:07,861 [INFO] Archive to: /home/cosmicnoob/AI_Employee_Vault/Done
+2026-03-14 17:37:07,861 [INFO] Mode: DRY RUN (no browser)
+2026-03-14 17:37:07,861 [INFO] Mode: Single check
+2026-03-14 17:37:07,861 [INFO] ==================================================
+2026-03-14 17:37:07,862 [INFO] Found 1 twitter post(s) to process
+2026-03-14 17:37:07,863 [WARNING] [DRY RUN] twitter post test_long_tweet.md: validation failed — Exceeds 280 chars (342 chars)
+2026-03-14 17:37:07,863 [INFO] Processed 1 post(s). Exiting.
+2026-03-14 18:18:54,717 [INFO] ==================================================
+2026-03-14 18:18:54,717 [INFO] Social Media Poster Starting
+2026-03-14 18:18:54,717 [INFO] Platforms: facebook, instagram, twitter
+2026-03-14 18:18:54,717 [INFO] Watching: /home/cosmicnoob/AI_Employee_Vault/Approved
+2026-03-14 18:18:54,717 [INFO] Archive to: /home/cosmicnoob/AI_Employee_Vault/Done
+2026-03-14 18:18:54,717 [INFO] Mode: DRY RUN (no browser)
+2026-03-14 18:18:54,717 [INFO] Mode: Single check
+2026-03-14 18:18:54,718 [INFO] ==================================================
+2026-03-14 18:18:54,720 [INFO] Processed 0 post(s). Exiting.

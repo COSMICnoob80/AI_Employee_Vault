@@ -11,6 +11,14 @@
     "vault-calendar": {
       "command": "python3",
       "args": ["/home/cosmicnoob/AI_Employee_Vault/MCP/calendar_server.py"]
+    },
+    "odoo-accounting": {
+      "command": "python3",
+      "args": ["/home/cosmicnoob/AI_Employee_Vault/MCP/odoo_server.py"]
+    },
+    "social-media": {
+      "command": "python3",
+      "args": ["/home/cosmicnoob/AI_Employee_Vault/MCP/social_media_server.py"]
     }
   }
 }

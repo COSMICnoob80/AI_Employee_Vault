@@ -1,7 +1,7 @@
 ---
 type: dashboard
 created: 2026-02-02
-last_updated: 2026-03-10 19:58
+last_updated: 2026-03-14 18:18
 status: active
 pending_tasks: 4
 plans_created: 3
@@ -26,6 +26,8 @@ plans_created: 3
 | MCP Vault FS | 🟢 Ready | Not started |
 | MCP Vault Calendar | 🟡 Ready | Not started |
 | Cross-Domain Router | 🟢 Ready | Not started |
+| Odoo Accounting | 🟡 Ready | Not started |
+| Social Media Poster | 🟡 Ready | Not started |
 
 ## Active Tasks
 
@@ -59,7 +61,7 @@ _Start watcher: `python ~/AI_Employee_Vault/Watchers/gmail_watcher.py`_
 | Tasks awaiting planning | 0 |
 | Tasks with plans | 22 |
 | Active plans | 22 |
-| Skills Documented | 12 |
+| Skills Documented | 15 |
 
 ## Approval Status
 
@@ -150,6 +152,35 @@ _Monitored by: `python ~/AI_Employee_Vault/Watchers/approval_watcher.py`_
 - Business only: `python Scripts/cross_domain.py --domain business`
 - Backfill tags: `python Scripts/cross_domain.py --backfill --dry-run`
 - JSON output: `python Scripts/cross_domain.py --json`
+
+## Odoo Accounting Status
+
+| Metric | Value |
+|--------|-------|
+| Connection | _Run `python MCP/odoo_server.py --test`_ |
+| Open Invoices | _Run accounting_summary tool_ |
+| Last Summary | _Not generated_ |
+
+**Commands:**
+- Test connection: `python MCP/odoo_server.py --test`
+- Dry-run mode: `python MCP/odoo_server.py --dry-run`
+- List invoices: Use `list_invoices` MCP tool
+- Accounting summary: Use `accounting_summary` MCP tool
+
+## Social Media Status
+
+| Platform | Session | Last Post |
+|----------|---------|-----------|
+| Facebook | _No session_ | — |
+| Instagram | _No session_ | — |
+| Twitter/X | _No session_ | — |
+
+**Commands:**
+- Dry run (all): `python Scripts/social_poster.py --platform all --dry-run --once`
+- Post Facebook: `python Scripts/social_poster.py --platform facebook --once`
+- Post Twitter: `python Scripts/social_poster.py --platform twitter --once`
+- Summary: `python Scripts/social_poster.py --summary`
+- MCP tools: `post_facebook`, `post_instagram`, `post_twitter`, `get_social_summary`
 
 ## Quick Links
 
