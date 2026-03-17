@@ -1,0 +1,108 @@
+[2026-03-18 00:29:40] Installing Python dependencies...
+[2026-03-18 00:29:40] Starting Flask API on :5001...
+[2026-03-18 00:29:40] API started (PID 290714)
+[2026-03-18 00:29:40] Starting Vite dev server on :5173...
+[2026-03-18 00:29:40] Web started (PID 290721)
+ * Serving Flask app 'server'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+[33mPress CTRL+C to quit[0m
+
+  VITE v6.4.1  ready in 131 ms
+
+  ➜  Local:   http://127.0.0.1:5173/
+127.0.0.1 - - [18/Mar/2026 00:30:22] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:30:22] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:30:22] "GET /api/briefing HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:30:22] "GET /api/approvals HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:30:22] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:30:22] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:30:22] "GET /api/briefing HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:30:22] "GET /api/mcp HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:30:22] "GET /api/approvals HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:30:22] "GET /api/mcp HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:30:22] "GET /api/tasks HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:30:22] "GET /api/odoo/summary HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:30:22] "GET /api/tasks HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:30:22] "GET /api/odoo/summary HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:30:52] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:30:52] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:31:22] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:31:22] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:31:22] "GET /api/approvals HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:31:22] "GET /api/tasks HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:31:52] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:31:52] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:32:23] "GET /api/tasks HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:32:23] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:32:23] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:32:23] "GET /api/approvals HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:32:53] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:32:53] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:33:24] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:33:24] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:33:24] "GET /api/approvals HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:33:24] "GET /api/tasks HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:33:54] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:33:54] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:34:24] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:34:24] "GET /api/approvals HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:34:24] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:34:24] "GET /api/tasks HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:34:54] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:34:54] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:35:22] "GET /api/briefing HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:35:22] "GET /api/mcp HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:35:22] "GET /api/odoo/summary HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:35:24] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:35:24] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:35:24] "GET /api/approvals HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:35:24] "GET /api/tasks HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:35:54] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:35:54] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:36:24] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:36:24] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:36:24] "GET /api/approvals HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:36:24] "GET /api/tasks HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:36:54] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:36:54] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:37:25] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:37:25] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:37:25] "GET /api/approvals HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:37:25] "GET /api/tasks HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:37:55] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:37:55] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:38:25] "GET /api/approvals HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:38:25] "GET /api/tasks HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:38:25] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:38:25] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:38:56] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:38:56] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:39:25] "GET /api/tasks HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:39:25] "GET /api/approvals HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:39:26] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:39:26] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:39:56] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:39:56] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:40:22] "GET /api/briefing HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:40:22] "GET /api/mcp HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:40:23] "GET /api/odoo/summary HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:40:26] "GET /api/approvals HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:40:26] "GET /api/tasks HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:40:27] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:40:27] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:40:57] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:40:57] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:41:26] "GET /api/approvals HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:41:26] "GET /api/tasks HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:41:27] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:41:27] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:41:57] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:41:57] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:42:27] "GET /api/approvals HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:42:27] "GET /api/tasks HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:42:28] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:42:28] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:42:58] "GET /api/audit?n=10 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Mar/2026 00:42:58] "GET /api/status HTTP/1.1" 200 -

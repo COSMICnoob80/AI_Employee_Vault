@@ -3,7 +3,7 @@ type: spec
 project: AI Employee Vault
 owner: cosmicnoob
 created: 2026-02-28
-last_updated: 2026-03-14 18:18
+last_updated: 2026-03-17 20:01
 current_tier: gold
 tier_progress: 7/7
 ---
@@ -97,6 +97,26 @@ tier_progress: 7/7
 | `Scripts/ralph_hooks.sh` | PostToolUse hook for audit logging |
 | `Scripts/cross_domain.py` | Cross-domain query, routing, and unified view |
 | `Scripts/social_poster.py` | Social media auto-poster (FB/IG/Twitter via Playwright) |
+| `Scripts/start_dashboard.sh` | Start/stop/status for AEWACS Command Center (API + Web) |
+
+### AEWACS Command Center
+
+Visual HUD dashboard (React SPA + Flask API) surfacing vault operational state.
+
+**API Endpoints** (`Dashboard/api/server.py`, port 5001):
+| Endpoint | Data Source |
+|----------|------------|
+| `GET /api/status` | `Dashboard.md` frontmatter + component table |
+| `GET /api/tasks` | `Needs_Action/*.md` frontmatter |
+| `GET /api/approvals` | `Pending_Approval/*.md` frontmatter |
+| `GET /api/briefing` | Latest `Reports/CEO_Briefing_*.md` |
+| `GET /api/odoo/invoices` | Odoo JSON-RPC (dry-run fallback) |
+| `GET /api/odoo/summary` | Odoo JSON-RPC (dry-run fallback) |
+| `GET /api/audit?n=10` | `Logs/audit.jsonl` tail |
+| `GET /api/mcp` | `.claude/mcp.json` + tool count per server |
+
+**Frontend Components** (`Dashboard/web/`, port 5173):
+HeaderBar, TierProgress, MetricCards, StatusGrid, McpServerArray, OdooPanel, ApprovalsTable, GoldMatrix, BriefingPreview, AuditTail
 
 ### Skills (15)
 | Skill | File |

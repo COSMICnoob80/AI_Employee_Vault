@@ -151,6 +151,28 @@ bash Scripts/schedule_watchers.sh start
 
 # Install cron (optional, 5-min keep-alive)
 bash Scripts/cron_setup.sh install
+
+# Start AEWACS Command Center dashboard
+bash Scripts/start_dashboard.sh start
+# Open http://localhost:5173
+```
+
+---
+
+## AEWACS Command Center
+
+Military HUD-style web dashboard surfacing vault operational state — component health, pending tasks, approvals, financials, audit trail, and CEO briefings.
+
+| Layer | Tech | Port |
+|-------|------|------|
+| API | Flask (Python) | 5001 |
+| Frontend | React + Vite | 5173 |
+| Design | Share Tech Mono + Outfit, glass-panel HUD | — |
+
+```bash
+bash Scripts/start_dashboard.sh start   # start both servers
+bash Scripts/start_dashboard.sh status  # check running state
+bash Scripts/start_dashboard.sh stop    # clean shutdown
 ```
 
 ---
