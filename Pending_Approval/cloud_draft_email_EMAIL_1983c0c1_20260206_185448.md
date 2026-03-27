@@ -1,0 +1,58 @@
+---
+type: approval_request
+action_type: email_send
+status: pending_approval
+origin: cloud_agent
+source_file: EMAIL_1983c0c1_20260206_185448.md
+requires_local: true
+created: 2026-03-19T15:19:18
+subject: "Your OTP is 632707"
+to: "NayaPay <service@nayapay.com>"
+priority: normal
+---
+
+# Draft Email Reply
+
+**To:** NayaPay <service@nayapay.com>
+**Subject:** Your OTP is 632707
+**Generated:** 2026-03-19 15:19 by Cloud Agent
+
+---
+
+Thank you for your email regarding "Your OTP is 632707".
+
+I have reviewed the contents and will follow up with a detailed response shortly.
+
+Best regards,
+AI Employee
+
+---
+
+*Original message from NayaPay <service@nayapay.com>:*
+
+> # Email: Your OTP is 632707
+
+## Details
+- **From**: NayaPay <service@nayapay.com>
+- **Subject**: Your OTP is 632707
+- **Received**: 2025-07-24 15:48:02
+- **Priority**: NORMAL
+- **Keywords**: none
+
+## Email Preview
+
+
+
+## Suggested Actions
+- [ ] Reply to sender
+- [ ] Forward to relevant party
+- [ ] Create follow-up task
+- [ ] Archive after processing
+
+## Links
+- [Open in Gmail](https://mail.google.com/mail/u/0/#inbox/1983c0c1c7c58a40)
+- Related: [[Dashboard]] | [[gmail_processor]]
+
+---
+
+**Cloud Agent Note:** This is an auto-generated draft. Requires local agent approval before sending.

@@ -1,6 +1,6 @@
 # AI Employee Vault
 
-> **Author:** Shah G | **Tier:** Gold 7/7 | **Checks:** 238/238 | **Skills:** 15 | **MCP Servers:** 5
+> **Author:** Shah G | **Tier:** Platinum 5/5 | **Gold Checks:** 238/238 | **Skills:** 16 | **MCP Servers:** 5
 
 ---
 
@@ -49,6 +49,7 @@ An Obsidian-based autonomous AI employee that treats **Claude Code as its brain*
 | Bronze | 4/4 | 25/25 | Vault structure, Dashboard, Handbook, email skill, filesystem watcher |
 | Silver | 8/8 | S1-S8 | Gmail watcher, HITL workflow, LinkedIn poster, task planner, MCP Gmail, HITL verification, cron system, skills docs |
 | **Gold** | **7/7** | **238/238** | G1=45, G2=17, G3=37, G4=14, G5=9, G6=52, G7=64 |
+| **Platinum** | **5/5** | — | Cloud/local split, claim-by-move, sync, single-writer, e2e demo |
 
 ### Gold Breakdown
 
@@ -84,7 +85,7 @@ An Obsidian-based autonomous AI employee that treats **Claude Code as its brain*
 | `MCP/odoo_server.py` | `list_invoices`, `get_invoice`, `create_invoice`, `list_accounts`, `get_journal_entries`, `accounting_summary` |
 | `MCP/social_media_server.py` | `post_facebook`, `post_instagram`, `post_twitter`, `get_social_summary` |
 
-### Scripts (8)
+### Scripts (13)
 
 | Script | Purpose |
 |--------|---------|
@@ -96,8 +97,13 @@ An Obsidian-based autonomous AI employee that treats **Claude Code as its brain*
 | `Scripts/ralph_hooks.sh` | PostToolUse hook for audit logging |
 | `Scripts/cross_domain.py` | Cross-domain query + unified view |
 | `Scripts/social_poster.py` | Social media auto-poster (FB/IG/Twitter) |
+| `Scripts/claim_manager.py` | Claim-by-move coordination module |
+| `Scripts/cloud_agent.py` | Cloud zone: draft-only agent |
+| `Scripts/local_agent.py` | Local zone: approve+execute agent |
+| `Scripts/vault_sync.sh` | Git-based sync checkpoints |
+| `Scripts/platinum_demo.sh` | End-to-end Platinum demo |
 
-### Skills (15)
+### Skills (16)
 
 | Skill | Description |
 |-------|-------------|
@@ -116,6 +122,29 @@ An Obsidian-based autonomous AI employee that treats **Claude Code as its brain*
 | Cross-Domain Integration | Unified personal + business view |
 | Odoo Accounting | Odoo JSON-RPC accounting |
 | Social Media Poster | FB/IG/Twitter via Playwright |
+| Platinum Architecture | Cloud/local zone split design |
+
+---
+
+## Platinum Tier: Cloud/Local Split
+
+Two-agent architecture simulating cloud+local work-zone specialization:
+
+| Agent | Zone | Capability |
+|-------|------|------------|
+| Cloud Agent | Draft-only | Scans Inbox/Needs_Action, generates drafts, writes to Pending_Approval/ |
+| Local Agent | Approve+Execute | Merges cloud status to Dashboard, executes approved drafts, archives to Done/ |
+
+**Key design patterns:**
+- **Claim-by-move:** Atomic file claiming via `In_Progress/{agent}/` prevents duplicate processing
+- **Single-writer Dashboard:** Only local agent writes Dashboard.md; cloud writes Updates/
+- **Secrets-never-sync:** Credentials stay on local machine
+- **HITL preserved:** Cloud drafts require human approval before local execution
+
+```bash
+# Run the full Platinum demo
+bash Scripts/platinum_demo.sh --auto
+```
 
 ---
 

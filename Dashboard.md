@@ -1,7 +1,7 @@
 ---
 type: dashboard
 created: 2026-02-02
-last_updated: 2026-03-17 20:01
+last_updated: 2026-03-19 12:47
 status: active
 pending_tasks: 4
 plans_created: 3
@@ -28,6 +28,8 @@ plans_created: 3
 | Cross-Domain Router | 🟢 Ready | Not started |
 | Odoo Accounting | 🟡 Ready | Not started |
 | Social Media Poster | 🟡 Ready | Not started |
+| Cloud Agent | 🟢 Ready | Not started |
+| Local Agent | 🟢 Ready | Not started |
 
 ## Active Tasks
 
@@ -181,6 +183,24 @@ _Monitored by: `python ~/AI_Employee_Vault/Watchers/approval_watcher.py`_
 - Post Twitter: `python Scripts/social_poster.py --platform twitter --once`
 - Summary: `python Scripts/social_poster.py --summary`
 - MCP tools: `post_facebook`, `post_instagram`, `post_twitter`, `get_social_summary`
+
+<!-- PLATINUM_STATUS_START -->
+## Platinum Status (Cloud/Local Split)
+
+| Agent | Zone | Status | Tasks | Last Update |
+|-------|------|--------|-------|-------------|
+| Cloud Agent | Draft-only | Stopped | 30 processed, 30 drafts | 2026-03-19 15:19:18 |
+| Local Agent | Approve+Execute | Running | 0 scanned, 0 executed | 2026-03-19 15:19:18 |
+
+**Coordination:** Claim-by-move via `In_Progress/{agent}/`
+**Sync:** Commit-based checkpoints (`Scripts/vault_sync.sh`)
+**Mode:** dry-run
+
+**Commands:**
+- Cloud agent: `python Scripts/cloud_agent.py --once`
+- Local agent: `python Scripts/local_agent.py --once`
+- Full demo: `bash Scripts/platinum_demo.sh --auto`
+<!-- PLATINUM_STATUS_END -->
 
 ## Quick Links
 

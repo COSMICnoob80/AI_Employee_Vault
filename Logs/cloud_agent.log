@@ -1,0 +1,143 @@
+2026-03-19 15:19:18,186 [INFO] PID 665477 written to /home/cosmicnoob/AI_Employee_Vault/cloud_agent.pid
+2026-03-19 15:19:18,187 [INFO] ==================================================
+2026-03-19 15:19:18,187 [INFO] Cloud Agent Starting (Draft-Only Zone)
+2026-03-19 15:19:18,187 [INFO] Mode: dry_run=False, once=True, scan_only=False
+2026-03-19 15:19:18,187 [INFO] ==================================================
+2026-03-19 15:19:18,189 [INFO] Found 30 unclaimed tasks
+2026-03-19 15:19:18,190 [INFO] Processing: EMAIL_PLATINUM_DEMO.md
+2026-03-19 15:19:18,190 [INFO] Claimed: EMAIL_PLATINUM_DEMO.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,191 [INFO] Draft created: cloud_draft_email_EMAIL_PLATINUM_DEMO.md (type=email)
+2026-03-19 15:19:18,191 [INFO] Released: EMAIL_PLATINUM_DEMO.md -> Pending_Approval/
+2026-03-19 15:19:18,192 [INFO] Processing: test_file.txt
+2026-03-19 15:19:18,192 [INFO] Claimed: test_file.txt -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,192 [INFO] Draft created: cloud_draft_task_test_file.md (type=generic)
+2026-03-19 15:19:18,193 [INFO] Released: test_file.txt -> Pending_Approval/
+2026-03-19 15:19:18,193 [INFO] Processing: urgent_email.txt
+2026-03-19 15:19:18,193 [INFO] Claimed: urgent_email.txt -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,194 [INFO] Draft created: cloud_draft_task_urgent_email.md (type=generic)
+2026-03-19 15:19:18,194 [INFO] Released: urgent_email.txt -> Pending_Approval/
+2026-03-19 15:19:18,194 [INFO] Processing: 20260202_220257_test_file.md
+2026-03-19 15:19:18,194 [INFO] Claimed: 20260202_220257_test_file.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,195 [INFO] Draft created: cloud_draft_task_20260202_220257_test_file.md (type=generic)
+2026-03-19 15:19:18,196 [INFO] Released: 20260202_220257_test_file.md -> Pending_Approval/
+2026-03-19 15:19:18,196 [INFO] Processing: 20260204_185223_urgent_email.md
+2026-03-19 15:19:18,196 [INFO] Claimed: 20260204_185223_urgent_email.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,197 [INFO] Draft created: cloud_draft_task_20260204_185223_urgent_email.md (type=generic)
+2026-03-19 15:19:18,197 [INFO] Released: 20260204_185223_urgent_email.md -> Pending_Approval/
+2026-03-19 15:19:18,197 [INFO] Processing: EMAIL_194e9c26_20260206_185448.md
+2026-03-19 15:19:18,197 [INFO] Claimed: EMAIL_194e9c26_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,199 [INFO] Draft created: cloud_draft_email_EMAIL_194e9c26_20260206_185448.md (type=email)
+2026-03-19 15:19:18,199 [INFO] Released: EMAIL_194e9c26_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,199 [INFO] Processing: EMAIL_194ec1eb_20260206_185448.md
+2026-03-19 15:19:18,199 [INFO] Claimed: EMAIL_194ec1eb_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,201 [INFO] Draft created: cloud_draft_email_EMAIL_194ec1eb_20260206_185448.md (type=email)
+2026-03-19 15:19:18,201 [INFO] Released: EMAIL_194ec1eb_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,201 [INFO] Processing: EMAIL_195285bf_20260206_185448.md
+2026-03-19 15:19:18,201 [INFO] Claimed: EMAIL_195285bf_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,202 [INFO] Draft created: cloud_draft_email_EMAIL_195285bf_20260206_185448.md (type=email)
+2026-03-19 15:19:18,203 [INFO] Released: EMAIL_195285bf_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,203 [INFO] Processing: EMAIL_1957e94e_20260206_185448.md
+2026-03-19 15:19:18,203 [INFO] Claimed: EMAIL_1957e94e_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,204 [INFO] Draft created: cloud_draft_email_EMAIL_1957e94e_20260206_185448.md (type=email)
+2026-03-19 15:19:18,205 [INFO] Released: EMAIL_1957e94e_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,205 [INFO] Processing: EMAIL_19583954_20260206_185448.md
+2026-03-19 15:19:18,205 [INFO] Claimed: EMAIL_19583954_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,206 [INFO] Draft created: cloud_draft_email_EMAIL_19583954_20260206_185448.md (type=email)
+2026-03-19 15:19:18,206 [INFO] Released: EMAIL_19583954_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,206 [INFO] Processing: EMAIL_19586646_20260206_185448.md
+2026-03-19 15:19:18,207 [INFO] Claimed: EMAIL_19586646_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,208 [INFO] Draft created: cloud_draft_email_EMAIL_19586646_20260206_185448.md (type=email)
+2026-03-19 15:19:18,208 [INFO] Released: EMAIL_19586646_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,208 [INFO] Processing: EMAIL_196f9934_20260206_185448.md
+2026-03-19 15:19:18,208 [INFO] Claimed: EMAIL_196f9934_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,210 [INFO] Draft created: cloud_draft_email_EMAIL_196f9934_20260206_185448.md (type=email)
+2026-03-19 15:19:18,210 [INFO] Released: EMAIL_196f9934_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,210 [INFO] Processing: EMAIL_1983c0c1_20260206_185448.md
+2026-03-19 15:19:18,210 [INFO] Claimed: EMAIL_1983c0c1_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,211 [INFO] Draft created: cloud_draft_email_EMAIL_1983c0c1_20260206_185448.md (type=email)
+2026-03-19 15:19:18,212 [INFO] Released: EMAIL_1983c0c1_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,212 [INFO] Processing: EMAIL_199c7f34_20260206_185448.md
+2026-03-19 15:19:18,212 [INFO] Claimed: EMAIL_199c7f34_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,213 [INFO] Draft created: cloud_draft_email_EMAIL_199c7f34_20260206_185448.md (type=email)
+2026-03-19 15:19:18,213 [INFO] Released: EMAIL_199c7f34_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,213 [INFO] Processing: EMAIL_199c905a_20260206_185448.md
+2026-03-19 15:19:18,214 [INFO] Claimed: EMAIL_199c905a_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,215 [INFO] Draft created: cloud_draft_email_EMAIL_199c905a_20260206_185448.md (type=email)
+2026-03-19 15:19:18,215 [INFO] Released: EMAIL_199c905a_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,215 [INFO] Processing: EMAIL_199ce195_20260206_185448.md
+2026-03-19 15:19:18,215 [INFO] Claimed: EMAIL_199ce195_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,216 [INFO] Draft created: cloud_draft_email_EMAIL_199ce195_20260206_185448.md (type=email)
+2026-03-19 15:19:18,217 [INFO] Released: EMAIL_199ce195_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,217 [INFO] Processing: EMAIL_199e15ed_20260206_185448.md
+2026-03-19 15:19:18,217 [INFO] Claimed: EMAIL_199e15ed_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,218 [INFO] Draft created: cloud_draft_email_EMAIL_199e15ed_20260206_185448.md (type=email)
+2026-03-19 15:19:18,218 [INFO] Released: EMAIL_199e15ed_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,218 [INFO] Processing: EMAIL_199f14e4_20260206_185448.md
+2026-03-19 15:19:18,219 [INFO] Claimed: EMAIL_199f14e4_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,220 [INFO] Draft created: cloud_draft_email_EMAIL_199f14e4_20260206_185448.md (type=email)
+2026-03-19 15:19:18,220 [INFO] Released: EMAIL_199f14e4_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,220 [INFO] Processing: EMAIL_19a6272a_20260206_185448.md
+2026-03-19 15:19:18,220 [INFO] Claimed: EMAIL_19a6272a_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,221 [WARNING] YAML parse error in EMAIL_19a6272a_20260206_185448.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""talentacquisition@asterdmhealthc ... 
+            ^
+2026-03-19 15:19:18,221 [INFO] Draft created: cloud_draft_email_EMAIL_19a6272a_20260206_185448.md (type=email)
+2026-03-19 15:19:18,221 [INFO] Released: EMAIL_19a6272a_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,222 [INFO] Processing: EMAIL_19a63a25_20260206_185448.md
+2026-03-19 15:19:18,222 [INFO] Claimed: EMAIL_19a63a25_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,223 [INFO] Draft created: cloud_draft_email_EMAIL_19a63a25_20260206_185448.md (type=email)
+2026-03-19 15:19:18,223 [INFO] Released: EMAIL_19a63a25_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,223 [INFO] Processing: EMAIL_19b93119_20260206_185448.md
+2026-03-19 15:19:18,223 [INFO] Claimed: EMAIL_19b93119_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,225 [INFO] Draft created: cloud_draft_email_EMAIL_19b93119_20260206_185448.md (type=email)
+2026-03-19 15:19:18,225 [INFO] Released: EMAIL_19b93119_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,225 [INFO] Processing: EMAIL_19bb6997_20260206_185448.md
+2026-03-19 15:19:18,225 [INFO] Claimed: EMAIL_19bb6997_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,226 [INFO] Draft created: cloud_draft_email_EMAIL_19bb6997_20260206_185448.md (type=email)
+2026-03-19 15:19:18,226 [INFO] Released: EMAIL_19bb6997_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,227 [INFO] Processing: EMAIL_19be1a6e_20260206_185448.md
+2026-03-19 15:19:18,227 [INFO] Claimed: EMAIL_19be1a6e_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,228 [INFO] Draft created: cloud_draft_email_EMAIL_19be1a6e_20260206_185448.md (type=email)
+2026-03-19 15:19:18,228 [INFO] Released: EMAIL_19be1a6e_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,228 [INFO] Processing: EMAIL_19be711e_20260206_185448.md
+2026-03-19 15:19:18,228 [INFO] Claimed: EMAIL_19be711e_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,230 [INFO] Draft created: cloud_draft_email_EMAIL_19be711e_20260206_185448.md (type=email)
+2026-03-19 15:19:18,230 [INFO] Released: EMAIL_19be711e_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,230 [INFO] Processing: EMAIL_19c30829_20260206_185448.md
+2026-03-19 15:19:18,230 [INFO] Claimed: EMAIL_19c30829_20260206_185448.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,231 [INFO] Draft created: cloud_draft_email_EMAIL_19c30829_20260206_185448.md (type=email)
+2026-03-19 15:19:18,231 [INFO] Released: EMAIL_19c30829_20260206_185448.md -> Pending_Approval/
+2026-03-19 15:19:18,232 [INFO] Processing: EMAIL_19c3c219_20260226_224015.md
+2026-03-19 15:19:18,232 [INFO] Claimed: EMAIL_19c3c219_20260226_224015.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,233 [INFO] Draft created: cloud_draft_email_EMAIL_19c3c219_20260226_224015.md (type=email)
+2026-03-19 15:19:18,233 [INFO] Released: EMAIL_19c3c219_20260226_224015.md -> Pending_Approval/
+2026-03-19 15:19:18,233 [INFO] Processing: EMAIL_19c8e9c6_20260226_224015.md
+2026-03-19 15:19:18,233 [INFO] Claimed: EMAIL_19c8e9c6_20260226_224015.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,235 [INFO] Draft created: cloud_draft_email_EMAIL_19c8e9c6_20260226_224015.md (type=email)
+2026-03-19 15:19:18,235 [INFO] Released: EMAIL_19c8e9c6_20260226_224015.md -> Pending_Approval/
+2026-03-19 15:19:18,235 [INFO] Processing: EMAIL_19c908f7_20260226_224015.md
+2026-03-19 15:19:18,235 [INFO] Claimed: EMAIL_19c908f7_20260226_224015.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,236 [WARNING] YAML parse error in EMAIL_19c908f7_20260226_224015.md: while parsing a block mapping
+  in "<unicode string>", line 2, column 1:
+    type: email
+    ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 4, column 9:
+    from: ""Booking.com" <noreply-iam@bookin ... 
+            ^
+2026-03-19 15:19:18,236 [INFO] Draft created: cloud_draft_email_EMAIL_19c908f7_20260226_224015.md (type=email)
+2026-03-19 15:19:18,236 [INFO] Released: EMAIL_19c908f7_20260226_224015.md -> Pending_Approval/
+2026-03-19 15:19:18,236 [INFO] Processing: EMAIL_19c9e370_20260227_152650.md
+2026-03-19 15:19:18,236 [INFO] Claimed: EMAIL_19c9e370_20260227_152650.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,237 [INFO] Draft created: cloud_draft_email_EMAIL_19c9e370_20260227_152650.md (type=email)
+2026-03-19 15:19:18,238 [INFO] Released: EMAIL_19c9e370_20260227_152650.md -> Pending_Approval/
+2026-03-19 15:19:18,238 [INFO] Processing: TEST_manual_task.md
+2026-03-19 15:19:18,238 [INFO] Claimed: TEST_manual_task.md -> In_Progress/cloud_agent/
+2026-03-19 15:19:18,239 [INFO] Draft created: cloud_draft_task_TEST_manual_task.md (type=generic)
+2026-03-19 15:19:18,239 [INFO] Released: TEST_manual_task.md -> Pending_Approval/
+2026-03-19 15:19:18,240 [INFO] Cloud agent stopped. Tasks: 30, Drafts: 30

@@ -1,6 +1,6 @@
 # AI Employee Vault — Agent Reference
 
-**Last Updated:** 2026-03-17 20:01
+**Last Updated:** 2026-03-19 12:47
 **Project:** AI Employee Vault
 **Compatibility:** Any AI coding agent (Claude Code, Antigravity, Cursor, Aider, etc.)
 
@@ -39,10 +39,13 @@ An Obsidian-based autonomous AI employee vault. Python watchers perceive events,
 | `Pending_Approval/` | Actions needing human OK | AI creates, Human reviews |
 | `Approved/` | Human-approved actions | Human moves here |
 | `Done/` | Completed items | AI archives |
-| `Skills/` | 15 skill files (7-section format) | Human-maintained |
+| `In_Progress/cloud_agent/` | Cloud agent work-in-progress | Cloud Agent |
+| `In_Progress/local_agent/` | Local agent work-in-progress | Local Agent |
+| `Updates/` | Agent status files (not Dashboard) | Cloud Agent |
+| `Skills/` | 16 skill files (7-section format) | Human-maintained |
 | `Watchers/` | 3 Python watchers | AI/Human |
 | `MCP/` | 5 MCP servers (FastMCP, stdio) | AI executes |
-| `Scripts/` | 8 automation scripts | AI/Human |
+| `Scripts/` | 13 automation scripts | AI/Human |
 | `Logs/` | Audit + activity logs | Watchers + AI |
 
 ---
@@ -71,6 +74,11 @@ Registered in `.claude/mcp.json`. All use `python3` + `stdio` transport.
 | `Scripts/ceo_briefing.py` | Weekly CEO Briefing generator | `python Scripts/ceo_briefing.py --dry-run` |
 | `Scripts/cross_domain.py` | Cross-domain unified view | `python Scripts/cross_domain.py --dry-run` |
 | `Scripts/social_poster.py` | FB/IG/Twitter auto-poster | `python Scripts/social_poster.py --platform all --dry-run --once` |
+| `Scripts/claim_manager.py` | Claim-by-move coordination module | `(imported by agents)` |
+| `Scripts/cloud_agent.py` | Cloud zone: draft-only agent | `python Scripts/cloud_agent.py --once` |
+| `Scripts/local_agent.py` | Local zone: approve+execute agent | `python Scripts/local_agent.py --once --dry-run` |
+| `Scripts/vault_sync.sh` | Git-based sync checkpoints | `bash Scripts/vault_sync.sh status` |
+| `Scripts/platinum_demo.sh` | End-to-end Platinum demo | `bash Scripts/platinum_demo.sh --auto` |
 | `Scripts/linkedin_poster.py` | LinkedIn auto-poster | `python Scripts/linkedin_poster.py --dry-run --once` |
 
 ---
@@ -155,7 +163,7 @@ head -20 VERIFICATION_REPORT.md
 
 | Tier | Status | Items |
 |------|--------|-------|
-| Bronze | ✅ Complete | 4/4 |
+| Bronze | ✅ Complete | 3/3 |
 | Silver | ✅ Complete | 8/8 |
 | Gold | ✅ Complete | 7/7 (238 verification checks) |
-| Platinum | ⏳ Future | Cloud deployment, vault sync, multi-agent |
+| Platinum | ✅ Complete | 5/5 (cloud/local split, claim-by-move, sync, demo) |

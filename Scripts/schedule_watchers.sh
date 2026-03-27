@@ -13,7 +13,7 @@ LOG_DIR="$VAULT_ROOT/Logs"
 LOG_FILE="$LOG_DIR/scheduler.log"
 PYTHON="python3"
 
-WATCHERS=(filesystem_watcher gmail_watcher approval_watcher linkedin_poster ralph_loop social_poster)
+WATCHERS=(filesystem_watcher gmail_watcher approval_watcher linkedin_poster ralph_loop social_poster cloud_agent local_agent)
 
 mkdir -p "$LOG_DIR"
 

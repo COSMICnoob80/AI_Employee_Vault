@@ -160,6 +160,35 @@ python Scripts/cross_domain.py --dry-run
 
 ---
 
+## 8:00–10:00 | Platinum: Cloud/Local Split
+
+**Talking Point:** "The Platinum tier demonstrates cloud/local work-zone specialization. A cloud agent handles drafting while the local agent handles approval and execution. They coordinate via claim-by-move file locking — no two agents process the same file."
+
+**Command:**
+```bash
+# Run the full Platinum demo (automated, no pauses)
+bash Scripts/platinum_demo.sh --auto
+```
+
+**Expected Output (9 steps):**
+1. Clean environment setup with In_Progress/, Updates/ directories
+2. Test email dropped in Inbox/ (simulates arrival while local offline)
+3. Cloud agent claims email, generates draft reply in Pending_Approval/
+4. Draft shown with approval_request frontmatter (origin: cloud_agent)
+5. Pause demonstrating zone separation
+6. Human approves by moving draft to Approved/ (HITL gate)
+7. Local agent claims approved draft, executes send (dry-run)
+8. Done/ contains completed draft, audit log shows full trail
+9. Dashboard.md Platinum section shows both agent statuses
+
+**Key Points:**
+- Cloud agent NEVER sends — draft-only zone
+- Single-writer rule: only local agent writes Dashboard.md
+- Claim-by-move prevents duplicate processing
+- Full audit trail in Logs/audit.jsonl
+
+---
+
 ## Pre-Demo Checklist
 
 - [ ] Obsidian open with vault loaded

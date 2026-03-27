@@ -1,6 +1,6 @@
 # Claude Code Rules
 
-**Last Updated:** 2026-03-17 20:01
+**Last Updated:** 2026-03-19 12:47
 **Project:** AI Employee Vault
 
 > For universal project context (architecture, MCP servers, scripts, HITL rules, folder structure), see [`AGENTS.md`](AGENTS.md).

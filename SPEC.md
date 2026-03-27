@@ -3,9 +3,9 @@ type: spec
 project: AI Employee Vault
 owner: cosmicnoob
 created: 2026-02-28
-last_updated: 2026-03-17 20:01
-current_tier: gold
-tier_progress: 7/7
+last_updated: 2026-03-19 12:47
+current_tier: platinum
+tier_progress: 5/5
 ---
 
 # AI Employee Vault — Project Spec
@@ -34,8 +34,9 @@ tier_progress: 7/7
 
 ## Tier Requirements
 
-### Bronze ✅ Complete
+### Bronze ✅ 3/3
 - Obsidian vault with [[Dashboard]] and [[Company_Handbook]]
+- Folder structure & Filesystem watcher script
 - Email classification skill (7-section format)
 - Folder structure: Inbox/, Needs_Action/, Done/
 - Filesystem watcher script
@@ -59,12 +60,12 @@ tier_progress: 7/7
 - [x] G6: Odoo Community Integration
 - [x] G7: Social Media (FB/IG/Twitter)
 
-### Platinum ⏳ Future
-- Cloud 24/7 deployment (Oracle/AWS Free Tier)
-- Cloud/Local work-zone split (cloud drafts, local approves)
-- Odoo Community on cloud VM with HTTPS + backups
-- Secure vault sync (Git or Syncthing, no credentials)
-- Multi-agent coordination with claim-by-move rule
+### Platinum ✅ 5/5
+- [x] P1: Cloud/Local work-zone split (cloud drafts, local approves)
+- [x] P2: Multi-agent coordination with claim-by-move rule
+- [x] P3: Secure vault sync (Git commit checkpoints, no credentials)
+- [x] P4: Single-writer Dashboard rule (local owns, cloud writes Updates/)
+- [x] P5: End-to-end demo: email arrives → cloud drafts → local approves → local sends
 
 ---
 
@@ -98,6 +99,11 @@ tier_progress: 7/7
 | `Scripts/cross_domain.py` | Cross-domain query, routing, and unified view |
 | `Scripts/social_poster.py` | Social media auto-poster (FB/IG/Twitter via Playwright) |
 | `Scripts/start_dashboard.sh` | Start/stop/status for AEWACS Command Center (API + Web) |
+| `Scripts/claim_manager.py` | Claim-by-move coordination module (Platinum) |
+| `Scripts/cloud_agent.py` | Cloud zone: draft-only agent (Platinum) |
+| `Scripts/local_agent.py` | Local zone: approve+execute agent (Platinum) |
+| `Scripts/vault_sync.sh` | Git-based sync checkpoints (Platinum) |
+| `Scripts/platinum_demo.sh` | End-to-end Platinum demo orchestrator |
 
 ### AEWACS Command Center
 
@@ -118,7 +124,7 @@ Visual HUD dashboard (React SPA + Flask API) surfacing vault operational state.
 **Frontend Components** (`Dashboard/web/`, port 5173):
 HeaderBar, TierProgress, MetricCards, StatusGrid, McpServerArray, OdooPanel, ApprovalsTable, GoldMatrix, BriefingPreview, AuditTail
 
-### Skills (15)
+### Skills (16)
 | Skill | File |
 |-------|------|
 | Email Classifier | [[email_classifier]] |
@@ -136,6 +142,7 @@ HeaderBar, TierProgress, MetricCards, StatusGrid, McpServerArray, OdooPanel, App
 | Cross-Domain Integration | [[cross_domain_integration]] |
 | Odoo Accounting | [[odoo_accounting]] |
 | Social Media Poster | [[social_media_poster]] |
+| Platinum Architecture | [[platinum_architecture]] |
 
 ### Core Docs
 - [[Dashboard]] — Central status hub
