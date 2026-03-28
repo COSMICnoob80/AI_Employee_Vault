@@ -141,3 +141,14 @@ expected <block end>, but found '<scalar>'
 2026-03-19 15:19:18,239 [INFO] Draft created: cloud_draft_task_TEST_manual_task.md (type=generic)
 2026-03-19 15:19:18,239 [INFO] Released: TEST_manual_task.md -> Pending_Approval/
 2026-03-19 15:19:18,240 [INFO] Cloud agent stopped. Tasks: 30, Drafts: 30
+2026-03-27 21:38:51,562 [INFO] PID 1077170 written to /home/cosmicnoob/AI_Employee_Vault/cloud_agent.pid
+2026-03-27 21:38:51,562 [INFO] ==================================================
+2026-03-27 21:38:51,563 [INFO] Cloud Agent Starting (Draft-Only Zone)
+2026-03-27 21:38:51,563 [INFO] Mode: dry_run=False, once=True, scan_only=False
+2026-03-27 21:38:51,563 [INFO] ==================================================
+2026-03-27 21:38:51,564 [INFO] Found 1 unclaimed tasks
+2026-03-27 21:38:51,564 [INFO] Processing: EMAIL_PLATINUM_DEMO.md
+2026-03-27 21:38:51,564 [INFO] Claimed: EMAIL_PLATINUM_DEMO.md -> In_Progress/cloud_agent/
+2026-03-27 21:38:51,565 [INFO] Draft created: cloud_draft_email_EMAIL_PLATINUM_DEMO.md (type=email)
+2026-03-27 21:38:51,566 [INFO] Released: EMAIL_PLATINUM_DEMO.md -> Pending_Approval/
+2026-03-27 21:38:51,567 [INFO] Cloud agent stopped. Tasks: 1, Drafts: 1
