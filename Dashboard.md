@@ -1,7 +1,7 @@
 ---
 type: dashboard
 created: 2026-02-02
-last_updated: 2026-03-19 12:47
+last_updated: 2026-03-29 19:32
 status: active
 pending_tasks: 4
 plans_created: 3
@@ -189,8 +189,8 @@ _Monitored by: `python ~/AI_Employee_Vault/Watchers/approval_watcher.py`_
 
 | Agent | Zone | Status | Tasks | Last Update |
 |-------|------|--------|-------|-------------|
-| Cloud Agent | Draft-only | Stopped | 1 processed, 1 drafts | 2026-03-27 21:38:51 |
-| Local Agent | Approve+Execute | Running | 0 scanned, 0 executed | 2026-03-27 21:40:50 |
+| Cloud Agent | Draft-only | Running | 99 processed, 99 drafts | 2026-03-29 19:32:00 |
+| Local Agent | Approve+Execute | Running | 14 scanned, 14 executed | 2026-03-29 19:32:00 |
 
 **Coordination:** Claim-by-move via `In_Progress/{agent}/`
 **Sync:** Commit-based checkpoints (`Scripts/vault_sync.sh`)

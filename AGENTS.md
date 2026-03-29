@@ -1,6 +1,6 @@
 # AI Employee Vault — Agent Reference
 
-**Last Updated:** 2026-03-19 12:47
+**Last Updated:** 2026-03-29 19:32
 **Project:** AI Employee Vault
 **Compatibility:** Any AI coding agent (Claude Code, Antigravity, Cursor, Aider, etc.)
 
