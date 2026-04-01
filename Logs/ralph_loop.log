@@ -154,3 +154,12 @@ expected <block end>, but found '<scalar>'
 2026-03-06 22:49:20,582 [INFO] Processing: EMAIL_19c908f7_20260226_224015.md [normal] [email] -> needs_approval
 2026-03-06 22:49:20,582 [INFO] Processing: 20260202_220257_test_file.md [normal] [file_drop] -> autonomous
 2026-03-06 22:49:20,582 [INFO] Ralph loop stopped. Tasks processed: 27
+2026-04-01 17:11:01,564 [INFO] PID 98093 written to /home/cosmicnoob/AI_Employee_Vault/ralph_loop.pid
+2026-04-01 17:11:01,565 [INFO] ==================================================
+2026-04-01 17:11:01,565 [INFO] Ralph Wiggum Task Loop Starting
+2026-04-01 17:11:01,565 [INFO] Mode: dry_run=False, once=False, scan_only=True, max=0
+2026-04-01 17:11:01,565 [INFO] ==================================================
+2026-04-01 17:11:01,565 [INFO] Queue manifest written: /home/cosmicnoob/AI_Employee_Vault/Logs/ralph_queue.json (0 tasks)
+2026-04-01 17:11:01,565 [INFO] Queue: 0 tasks
+2026-04-01 17:11:01,565 [INFO] Scan-only mode — skipping execution
+2026-04-01 17:11:01,565 [INFO] Ralph loop stopped. Tasks processed: 0

@@ -21,3 +21,4 @@ Logs/audit.jsonl
 # Generated reports
 Reports/*.md
 .env.odoo
+GitHub repo token
