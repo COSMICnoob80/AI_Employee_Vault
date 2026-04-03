@@ -1,7 +1,7 @@
 ---
 type: agent_status
 agent: cloud_agent
-updated: 2026-03-27T21:38:51
+updated: 2026-04-03T18:45:59
 ---
 
 # Cloud Agent Status
@@ -9,8 +9,8 @@ updated: 2026-03-27T21:38:51
 | Metric | Value |
 |--------|-------|
 | Status | Stopped |
-| Last Update | 2026-03-27 21:38:51 |
-| Tasks Processed | 1 |
-| Drafts Created | 1 |
+| Last Update | 2026-04-03 18:45:59 |
+| Tasks Processed | 0 |
+| Drafts Created | 0 |
 | In Progress | 0 |
 | Mode | live |

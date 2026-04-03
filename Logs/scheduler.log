@@ -28,3 +28,23 @@
 2026-02-27 15:27:06 [INFO] gmail_watcher stopped (was PID 15426)
 2026-02-27 15:27:07 [INFO] approval_watcher stopped (was PID 15432)
 2026-02-27 15:27:07 [INFO] === All watchers stopped ===
+2026-04-03 18:43:58 [INFO] === Starting watchers ===
+2026-04-03 18:43:59 [INFO] filesystem_watcher started (PID 622119)
+2026-04-03 18:43:59 [INFO] gmail_watcher started (PID 622125)
+2026-04-03 18:43:59 [INFO] approval_watcher started (PID 622131)
+2026-04-03 18:43:59 [WARN] linkedin_poster skipped — no session (run manually first)
+2026-04-03 18:43:59 [INFO] ralph_loop started (PID 622141)
+2026-04-03 18:43:59 [WARN] social_poster skipped — no social sessions (run manually first per platform)
+2026-04-03 18:43:59 [INFO] cloud_agent started (PID 622151)
+2026-04-03 18:43:59 [INFO] local_agent started (PID 622157)
+2026-04-03 18:43:59 [INFO] === Startup complete ===
+2026-04-03 18:45:49 [INFO] === Stopping watchers ===
+2026-04-03 18:45:50 [INFO] filesystem_watcher stopped (was PID 622119)
+2026-04-03 18:45:51 [INFO] gmail_watcher stopped (was PID 622125)
+2026-04-03 18:45:52 [INFO] approval_watcher stopped (was PID 622131)
+2026-04-03 18:45:52 [INFO] linkedin_poster not running
+2026-04-03 18:45:57 [INFO] ralph_loop stopped (was PID 622141)
+2026-04-03 18:45:57 [INFO] social_poster not running
+2026-04-03 18:45:59 [INFO] cloud_agent stopped (was PID 622151)
+2026-04-03 18:46:04 [INFO] local_agent stopped (was PID 622157)
+2026-04-03 18:46:04 [INFO] === All watchers stopped ===

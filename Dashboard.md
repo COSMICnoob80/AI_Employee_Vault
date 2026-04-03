@@ -189,12 +189,12 @@ _Monitored by: `python ~/AI_Employee_Vault/Watchers/approval_watcher.py`_
 
 | Agent | Zone | Status | Tasks | Last Update |
 |-------|------|--------|-------|-------------|
-| Cloud Agent | Draft-only | Running | 99 processed, 99 drafts | 2026-03-29 19:32:00 |
-| Local Agent | Approve+Execute | Running | 14 scanned, 14 executed | 2026-03-29 19:32:00 |
+| Cloud Agent | Draft-only | Stopped | 0 processed, 0 drafts | 2026-04-03 18:45:59 |
+| Local Agent | Approve+Execute | Running | 0 scanned, 0 executed | 2026-04-03 18:45:59 |
 
 **Coordination:** Claim-by-move via `In_Progress/{agent}/`
 **Sync:** Commit-based checkpoints (`Scripts/vault_sync.sh`)
-**Mode:** dry-run
+**Mode:** live
 
 **Commands:**
 - Cloud agent: `python Scripts/cloud_agent.py --once`

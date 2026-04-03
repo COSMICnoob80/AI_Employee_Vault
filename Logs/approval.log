@@ -37,3 +37,12 @@
 2026-02-27 15:26:42,452 [INFO] Archive to: /home/cosmicnoob/AI_Employee_Vault/Done
 2026-02-27 15:26:42,452 [INFO] Press Ctrl+C to stop
 2026-02-27 15:26:42,452 [INFO] ==================================================
+2026-04-03 18:43:59,087 [INFO] ==================================================
+2026-04-03 18:43:59,088 [INFO] Approval Watcher Starting
+2026-04-03 18:43:59,088 [INFO] Monitoring: /home/cosmicnoob/AI_Employee_Vault/Pending_Approval
+2026-04-03 18:43:59,088 [INFO] Monitoring: /home/cosmicnoob/AI_Employee_Vault/Approved
+2026-04-03 18:43:59,088 [INFO] Archive to: /home/cosmicnoob/AI_Employee_Vault/Done
+2026-04-03 18:43:59,088 [INFO] Press Ctrl+C to stop
+2026-04-03 18:43:59,088 [INFO] ==================================================
+2026-04-03 18:44:29,568 [WARNING] Could not read EMAIL_19d53101_20260403_184421.md.tmp: [Errno 2] No such file or directory: '/home/cosmicnoob/AI_Employee_Vault/Pending_Approval/EMAIL_19d53101_20260403_184421.md.tmp'
+2026-04-03 18:44:29,568 [INFO] New approval request: EMAIL_19d53101_20260403_184421.md.tmp | Type: unknown | Priority: normal

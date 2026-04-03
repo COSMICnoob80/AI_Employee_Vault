@@ -152,3 +152,33 @@ expected <block end>, but found '<scalar>'
 2026-03-27 21:38:51,565 [INFO] Draft created: cloud_draft_email_EMAIL_PLATINUM_DEMO.md (type=email)
 2026-03-27 21:38:51,566 [INFO] Released: EMAIL_PLATINUM_DEMO.md -> Pending_Approval/
 2026-03-27 21:38:51,567 [INFO] Cloud agent stopped. Tasks: 1, Drafts: 1
+2026-04-03 18:43:59,077 [INFO] PID 622151 written to /home/cosmicnoob/AI_Employee_Vault/cloud_agent.pid
+2026-04-03 18:43:59,077 [INFO] PID 622151 written to /home/cosmicnoob/AI_Employee_Vault/cloud_agent.pid
+2026-04-03 18:43:59,077 [INFO] ==================================================
+2026-04-03 18:43:59,077 [INFO] ==================================================
+2026-04-03 18:43:59,077 [INFO] Cloud Agent Starting (Draft-Only Zone)
+2026-04-03 18:43:59,077 [INFO] Cloud Agent Starting (Draft-Only Zone)
+2026-04-03 18:43:59,077 [INFO] Mode: dry_run=False, once=False, scan_only=False
+2026-04-03 18:43:59,077 [INFO] Mode: dry_run=False, once=False, scan_only=False
+2026-04-03 18:43:59,077 [INFO] ==================================================
+2026-04-03 18:43:59,077 [INFO] ==================================================
+2026-04-03 18:43:59,077 [INFO] Found 0 unclaimed tasks
+2026-04-03 18:43:59,077 [INFO] Found 0 unclaimed tasks
+2026-04-03 18:43:59,078 [INFO] Sleeping 30s until next scan...
+2026-04-03 18:43:59,078 [INFO] Sleeping 30s until next scan...
+2026-04-03 18:44:29,078 [INFO] Found 0 unclaimed tasks
+2026-04-03 18:44:29,078 [INFO] Found 0 unclaimed tasks
+2026-04-03 18:44:29,079 [INFO] Sleeping 30s until next scan...
+2026-04-03 18:44:29,079 [INFO] Sleeping 30s until next scan...
+2026-04-03 18:44:59,079 [INFO] Found 0 unclaimed tasks
+2026-04-03 18:44:59,079 [INFO] Found 0 unclaimed tasks
+2026-04-03 18:44:59,081 [INFO] Sleeping 30s until next scan...
+2026-04-03 18:44:59,081 [INFO] Sleeping 30s until next scan...
+2026-04-03 18:45:29,082 [INFO] Found 0 unclaimed tasks
+2026-04-03 18:45:29,082 [INFO] Found 0 unclaimed tasks
+2026-04-03 18:45:29,083 [INFO] Sleeping 30s until next scan...
+2026-04-03 18:45:29,083 [INFO] Sleeping 30s until next scan...
+2026-04-03 18:45:57,812 [INFO] Signal 15 received, shutting down...
+2026-04-03 18:45:57,812 [INFO] Signal 15 received, shutting down...
+2026-04-03 18:45:59,084 [INFO] Cloud agent stopped. Tasks: 0, Drafts: 0
+2026-04-03 18:45:59,084 [INFO] Cloud agent stopped. Tasks: 0, Drafts: 0
